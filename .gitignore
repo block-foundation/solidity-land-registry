@@ -1,0 +1,26 @@
+# Block Foundation .gitignore
+# v0.0.1
+
+# General
+.DS_Store
+tmp/
+
+# Environments
+.env
+*.env
+.venv
+venv/
+env.bak/
+venv.bak/
+
+# Node
+node_modules
+node_modules/
+npm-debug.log
+components
+manifest.json
+
+# C
+*.o
+*.so
+*.bin
