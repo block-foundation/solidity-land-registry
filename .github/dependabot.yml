@@ -1,0 +1,30 @@
+
+---
+
+version: 2
+
+updates:
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    target-branch: master
+
+  - package-ecosystem: docker
+    directory: /.devcontainer
+    schedule:
+      interval: daily
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    target-branch: master
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    target-branch: master
