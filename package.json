@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/block-foundation/solidity-land-registry/issues"
   },
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
