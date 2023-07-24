@@ -1,0 +1,85 @@
+name: 🐞 Bug or error report
+description: Report an anomaly or unexpected behavior with a feature from this repository.
+labels: ['Needs: Triage :mag:', 'type:bug-suspected']
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      - [x] Bug
+
+      Thank you for reporting a bug! Use the sections below to submit a bug **only** if it's related to features in this repo.
+
+      - All bug reports are welcome - we want to fix them!
+      - This repo is maintained by volunteers. Please be courteous and patient. 🙂
+      - Remember to include sufficient details and context.
+      - If you have multiple questions, suggestions, or bugs, please submit them in separate issues.
+      - We accept pull requests. If you know how to fix it - go ahead!
+
+
+      Please provide the following details about the issue you encountered.  *Issues that do not provide the information requested in this form will be flagged as **incomplete** & automatically closed.*
+
+- type: input
+  id: feature
+  validations:
+    required: true
+  attributes:
+    label: Sample
+    description: |
+        Which feature are you having troubles with?
+
+        Use the feature name or URL. We don't want to be spend all this time diagnosing issues about the wrong feature, do we?
+
+- type: input
+  id: authors
+  validations:
+    required: true
+  attributes:
+    label: Author(s)
+    description: |
+        Who wrote the feature?
+
+        Because of the way this repository is configured, features authors do not get a notification when you create an issue.
+
+        For the section above **@mention any author of the feature**. Authors' GitHub handle can be found on the main feature documentation page, under the "Solution" section.
+
+        Issues without an @mention will be closed automatically, as authors won't get notified.
+
+        **NOTE:** Don't @mention the repo maintainers, they already get notified.
+
+- type: markdown
+  attributes:
+    value: |
+      Provide a clear & concise description of what the bug is.
+
+      **Do not attach ZIP files** of your code or compiled projects - instead, please publish your code to a public GitHub repo & post a link to it.
+
+- type: textarea
+  id: what-happened
+  attributes:
+    label: What happened?
+    description: Describe the observed behavior
+    placeholder: Tell us what you see!
+  validations:
+    required: true
+
+- type: textarea
+  id: steps
+  attributes:
+    label: Steps to reproduce
+    description: How do you reproduce this? Please provide as much step-by-step detail as possible.
+    value: |
+      1.
+      2.
+      3.
+  validations:
+    required: true
+
+- type: textarea
+  id: expected
+  attributes:
+    label: Expected behavior
+    description: What did you expect to happen when the reproduce steps are followed?
+    placeholder: Tell us what you expected to see!
+  validations:
+    required: true
