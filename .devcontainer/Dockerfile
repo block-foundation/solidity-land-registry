@@ -1,40 +1,18 @@
-FROM ubuntu:22.04
+# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.202.5/containers/ubuntu/.devcontainer/base.Dockerfile
 
-# non interactive frontend for locales
-ENV DEBIAN_FRONTEND=noninteractive
+# [Choice] Ubuntu version (use hirsuite or bionic on local arm64/Apple Silicon): hirsute, focal, bionic
+ARG VARIANT="hirsute"
+FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
-# installing texlive and utils
-RUN \
-    apt-get update && \
-    apt-get -y install \
-        --no-install-recommends \
-        locales \
-        curl \
-        make \
-        git \
-        texlive \
-        texlive-latex-extra \
-        texlive-latex-recommended \
-        texlive-bibtex-extra \
-        texlive-extra-utils \
-        texlive-fonts-extra \
-        pandoc \
-        biber \
-        latexmk \
-        procps \
-    && \
-    rm -rf /var/lib/apt/lists/*
+# Update all Ubuntu Packages
+RUN apt update && apt upgrade -y
 
-# generating locales
-RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
-    dpkg-reconfigure --frontend=noninteractive locales && \
-    update-locale LANG=en_US.UTF-8
+# Install curl
+RUN apt install curl
 
-ENV \
-    LANGUAGE=en_US.UTF-8 \
-    LANG=en_US.UTF-8 \
-    LC_ALL=en_US.UTF-8
+# Install node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+RUN apt install -y nodejs
 
-# installing cpanm & missing latexindent dependencies
-RUN curl -L http://cpanmin.us | perl - --self-upgrade && \
-    cpanm Log::Dispatch::File YAML::Tiny File::HomeDir
+## Install the Hardhat (hh) shortcut tool
+RUN npm install -g hardhat-shorthand
