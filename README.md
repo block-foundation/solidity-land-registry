@@ -52,7 +52,7 @@ npm run compile
 
 ### Copyright
 
-Copyright 2023, [Block Foundation Community Authors](https://github.com/block-foundation/community/blob/master/AUTHORS).
+Copyright 2023, [Block Foundation](https://www.blockfoundation.io).
 
 ### License
 
