@@ -16,6 +16,28 @@
 
 ---
 
+
+<div>
+<img align="right" width="75%" src="https://raw.githubusercontent.com/block-foundation/brand/master/src/image/repository_cover/block_foundation-structure-03-accent.jpg"  alt="Block Foundation">
+<br>
+<details open="open">
+<summary>Table of Contents</summary>
+  
+- [Introduction](#style-guide)
+- [Quick Start](#quick-start)
+- [Contract](#contract)
+- [Development Resources](#development-resources)
+- [Legal Information](#legal-information)
+  - [Copyright](#copyright)
+  - [License](#license)
+  - [Warning](#warning)
+  - [Disclaimer](#disclaimer)
+
+</details>
+</div>
+
+<br clear="both"/>
+
 ## Introduction
 
 Welcome to the Decentralized Land Registry project, an open-source venture that aims to redefine land transactions with the power of blockchain. Leveraging advanced blockchain technology, this project introduces an innovative way to manage and conduct land transactions transparently, securely, and efficiently.
@@ -47,6 +69,12 @@ npm i
 ``` sh
 npm run compile
 ```
+
+## Contract
+
+
+## Development Resources
+
 
 ## Legal Information
 
