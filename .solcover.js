@@ -1,4 +1,6 @@
-module.exports = {
-    skipFiles: [
-    ]
-}
+export const skipFiles = [];
+
+// module.exports = {
+//     skipFiles: [
+//     ]
+// }
