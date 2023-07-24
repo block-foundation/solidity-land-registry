@@ -88,7 +88,7 @@ Moreover:
 
 ## Development Resources
 
-## Other Repositories
+### Other Repositories
 
 | Smart Contract                | `Solidity`  | `Teal`      |
 | ----------------------------- | ----------- | ----------- |
