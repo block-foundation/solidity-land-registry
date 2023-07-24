@@ -1,1 +1,47 @@
 *.sol linguist-language=Solidity
+* text=auto
+* whitespace=space-before-tab,tab-in-indent,trailing-space
+*.txt eol=lf
+*.md eol=lf diff=markdown
+*.sh eol=lf diff=bash
+*.py eol=lf diff=python
+*.[ch] eol=lf diff=cpp
+*.htm eol=lf diff=html
+*.html eol=lf diff=html
+*.css eol=lf diff=css
+*.go eol=lf
+*.sol eol=lf
+*.js eol=lf
+*.jsx eol=lf
+*.ts eol=lf
+*.json eol=lf
+*.toml eol=lf
+*.env eol=lf
+*.env.example eol=lf
+*.yml eol=lf
+*.ini eol=lf
+*.lock eol=lf
+*.conf eol=lf
+*.code-workspace eol=lf
+LICENSE eol=lf
+Dockerfile* eol=lf
+Makefile* -whitespace eol=lf
+*.data binary
+*.bin binary
+*.binary binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.tar binary
+*.gz binary
+*.tgz binary
+*.pdf binary
+*.zip binary
+*.a binary
+*.lib binary
+/bin/* binary
+.gitmodules -whitespace eol=lf
+.gitignore eol=lf
+.gitattributes eol=lf
