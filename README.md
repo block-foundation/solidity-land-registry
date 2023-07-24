@@ -52,7 +52,7 @@ npm run compile
 
 ### Copyright
 
-Copyright 2023, [Block Foundation](https://www.blockfoundation.io).
+Copyright 2023, [Stichting Block Foundation](https://www.blockfoundation.io). All rights reserved.
 
 ### License
 
