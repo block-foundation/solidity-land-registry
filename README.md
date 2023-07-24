@@ -11,7 +11,7 @@
 <div>
     <img align="right" src="https://raw.githubusercontent.com/block-foundation/brand/master/logo/logo_gray.png" width="96" alt="Block Foundation Logo">
     <h1 align="left">Decentralized Land Registry</h1>
-    <h3 align="left">Block Foundation Smart Contract Templates</h3>
+    <h3 align="left">Block Foundation Smart Contract Series [Solidity]</h3>
 </div>
 
 ---
@@ -72,9 +72,35 @@ npm run compile
 
 ## Contract
 
+This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land, or adding events to keep track of every time a piece of land is registered or transferred.
+
+In this contract:
+
+- `registerLand()` allows an address to register a new parcel of land with its location and a unique parcel ID. Emits a LandRegistered event when land is registered.
+- `transferLand()` allows the current owner of a land parcel to transfer it to a new owner. Emits a LandTransferred event when land is transferred.
+- `sellLand()` allows a landowner to sell their land to a buyer. This also involves the transfer of Ether (the currency on Ethereum) from the buyer to the seller, representing the payment for the land.
+- `verifyLand()` allows anyone to verify the details of a land parcel.
+
+Moreover:
+
+- `price` on the `Land struct` handles selling land parcels.
+- `onlyLandOwner` modifier to ensures that only the owner of a land parcel can perform certain actions.
 
 ## Development Resources
 
+## Other Repositories
+
+| Smart Contract                | `Solidity`  | `Teal`      |
+| ----------------------------- | ----------- | ----------- |
+| Template                      | [->](https://github.com/block-foundation/solidity-template) | [->](https://github.com/block-foundation/teal-template) |
+| Architectural Design          | [->](https://github.com/block-foundation/solidity-architectural-design) | [->](https://github.com/block-foundation/teal-architectural-design) |
+| Architecture Competition      | [->](https://github.com/block-foundation/solidity-architecture-competition) | [->](https://github.com/block-foundation/teal-architecture-competition) |
+| Housing Cooporative           | [->](https://github.com/block-foundation/solidity-housing-cooperative) | [->](https://github.com/block-foundation/teal-housing-cooperative) |
+| Land Registry                 | [->](https://github.com/block-foundation/solidity-land-registry) | [->](https://github.com/block-foundation/teal-land-registry) |
+| Real-Estate Crowsfunding      | [->](https://github.com/block-foundation/solidity-real-estate-crowdfunding) | [->](https://github.com/block-foundation/teal-real-estate-crowdfunding) |
+| Rent-to-Own                   | [->](https://github.com/block-foundation/solidity-rent-to-own) | [->](https://github.com/block-foundation/teal-rent-to-own) |
+| Self-Owning Building          | [->](https://github.com/block-foundation/solidity-self-owning-building) | [->](https://github.com/block-foundation/teal-self-owning-building) |
+| Smart Home                    | [->](https://github.com/block-foundation/solidity-smart-home) | [->](https://github.com/block-foundation/teal-smart-home) |
 
 ## Legal Information
 
