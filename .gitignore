@@ -1,5 +1,5 @@
 # Block Foundation .gitignore
-# v0.0.1
+# v0.0.2
 
 # General
 .DS_Store
@@ -24,3 +24,14 @@ manifest.json
 *.o
 *.so
 *.bin
+
+# Hardhat files
+cache_hardhat/
+artifacts/
+
+# Hardhat plugin files
+typechain-types/
+
+# Hardhat temporary
+/.openzeppelin/
+/broadcast
