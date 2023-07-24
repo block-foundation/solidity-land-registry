@@ -1,6 +1,3 @@
 {
-  "editor.fontLigatures": true,
-  "latex-workshop.latex.outDir": "./out",
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.synctex.afterBuild.enabled": true
+    "editor.fontLigatures": true
 }
