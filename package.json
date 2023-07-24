@@ -1,40 +1,57 @@
 {
   "name": "solidity-land-registry",
-  "version": "1.0.0",
-  "description": "",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "truffle compile"
-  },
+  "description": "Decentralized Land Registry",
+  "author": "Stichting Block Foundation",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "keywords": [
+    "blockfoundation",
+    "blockchain",
+    "architecture"
+  ],
+  "homepage": "https://github.com/block-foundation/solidity-land-registry#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/block-foundation/solidity-land-registry.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/block-foundation/solidity-land-registry/issues"
   },
-  "homepage": "https://github.com/block-foundation/solidity-land-registry#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy-rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby",
+    "deploy-mainnet": "npx hardhat run scripts/deploy.ts --network mainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.1",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.0.1",
+    "@typechain/ethers-v6": "^0.4.3",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.4",
+    "chai": "^4.3.7",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.41.0",
+    "ethers": "^6.6.5",
+    "hardhat": "^2.17.0",
+    "prettier": "^2.8.8",
+    "solhint": "^3.4.1",
+    "solidity-coverage": "^0.8.4",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.1",
+    "typescript": "^5.1.6",
+    "web3": "^4.0.3",
+    "webpack": "^5.88.2"
+  },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.2.0",
-    "@truffle/hdwallet-provider": "^1.4.2",
-    "chai": "^4.3.4",
-    "chai-as-promised": "^7.1.1",
-    "chai-bn": "^0.3.0",
-    "dotenv": "^10.0.0",
-    "ethereum-waffle": "^3.4.0",
-    "prettier": "^2.3.2",
-    "openzeppelin-solidity": "^2.2.0",
-    "solc": "^0.5.2",
-    "solc-js": "^0.5.2",
-    "truffle-hdwallet-provider": "^1.0.10",
-    "web3": "^4.0.3"
+    "@openzeppelin/contracts": "^4.9.2",
+    "@openzeppelin/contracts-upgradeable": "^4.9.2",
+    "hardhat-abi-exporter": "^2.10.1",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.3.10",
+    "web3-utils": "^4.0.3"
   }
 }
-
