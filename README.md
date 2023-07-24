@@ -1,8 +1,8 @@
 <div align="right">
 
-  [![license](https://img.shields.io/github/license/block-foundation/manifesto?color=green&label=license&style=flat-square)](LICENSE.md)
-  ![stars](https://img.shields.io/github/stars/block-foundation/manifesto?color=blue&label=stars&style=flat-square)
-  ![contributors](https://img.shields.io/github/contributors/block-foundation/manifesto?color=blue&label=contributors&style=flat-square)
+  [![license](https://img.shields.io/github/license/block-foundation/solidity-land-registry?color=green&label=license&style=flat-square)](LICENSE.md)
+  ![stars](https://img.shields.io/github/stars/block-foundation/solidity-land-registry?color=blue&label=stars&style=flat-square)
+  ![contributors](https://img.shields.io/github/contributors/block-foundation/solidity-land-registry?color=blue&label=contributors&style=flat-square)
 
 </div>
 
