@@ -90,17 +90,19 @@ Moreover:
 
 ### Other Repositories
 
-| Smart Contract                | `Solidity`  | `Teal`      |
-| ----------------------------- | ----------- | ----------- |
-| Template                      | [->](https://github.com/block-foundation/solidity-template) | [->](https://github.com/block-foundation/teal-template) |
-| Architectural Design          | [->](https://github.com/block-foundation/solidity-architectural-design) | [->](https://github.com/block-foundation/teal-architectural-design) |
-| Architecture Competition      | [->](https://github.com/block-foundation/solidity-architecture-competition) | [->](https://github.com/block-foundation/teal-architecture-competition) |
-| Housing Cooporative           | [->](https://github.com/block-foundation/solidity-housing-cooperative) | [->](https://github.com/block-foundation/teal-housing-cooperative) |
-| Land Registry                 | [->](https://github.com/block-foundation/solidity-land-registry) | [->](https://github.com/block-foundation/teal-land-registry) |
-| Real-Estate Crowsfunding      | [->](https://github.com/block-foundation/solidity-real-estate-crowdfunding) | [->](https://github.com/block-foundation/teal-real-estate-crowdfunding) |
-| Rent-to-Own                   | [->](https://github.com/block-foundation/solidity-rent-to-own) | [->](https://github.com/block-foundation/teal-rent-to-own) |
-| Self-Owning Building          | [->](https://github.com/block-foundation/solidity-self-owning-building) | [->](https://github.com/block-foundation/teal-self-owning-building) |
-| Smart Home                    | [->](https://github.com/block-foundation/solidity-smart-home) | [->](https://github.com/block-foundation/teal-smart-home) |
+#### Smart Contracts
+
+|                                   | `Solidity`  | `Teal`      |
+| --------------------------------- | ----------- | ----------- |
+| **Template**                      | [**>>>**](https://github.com/block-foundation/solidity-template) | [**>>>**](https://github.com/block-foundation/teal-template) |
+| **Architectural Design**          | [**>>>**](https://github.com/block-foundation/solidity-architectural-design) | [**>>>**](https://github.com/block-foundation/teal-architectural-design) |
+| **Architecture Competition**      | [**>>>**](https://github.com/block-foundation/solidity-architecture-competition) | [**>>>**](https://github.com/block-foundation/teal-architecture-competition) |
+| **Housing Cooporative**           | [**>>>**](https://github.com/block-foundation/solidity-housing-cooperative) | [**>>>**](https://github.com/block-foundation/teal-housing-cooperative) |
+| **Land Registry**                 | [**>>>**](https://github.com/block-foundation/solidity-land-registry) | [**>>>**](https://github.com/block-foundation/teal-land-registry) |
+| **Real-Estate Crowdfunding**      | [**>>>**](https://github.com/block-foundation/solidity-real-estate-crowdfunding) | [**>>>**](https://github.com/block-foundation/teal-real-estate-crowdfunding) |
+| **Rent-to-Own**                   | [**>>>**](https://github.com/block-foundation/solidity-rent-to-own) | [**>>>**](https://github.com/block-foundation/teal-rent-to-own) |
+| **Self-Owning Building**          | [**>>>**](https://github.com/block-foundation/solidity-self-owning-building) | [**>>>**](https://github.com/block-foundation/teal-self-owning-building) |
+| **Smart Home**                    | [**>>>**](https://github.com/block-foundation/solidity-smart-home) | [**>>>**](https://github.com/block-foundation/teal-smart-home) |
 
 ## Legal Information
 
