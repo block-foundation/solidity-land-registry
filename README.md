@@ -86,11 +86,13 @@ Moreover:
 - `price` on the `Land struct` handles selling land parcels.
 - `onlyLandOwner` modifier to ensures that only the owner of a land parcel can perform certain actions.
 
+*There is also a [PyTeal version]((https://github.com/block-foundation/teal-land-registry)) of this smart-contract, which offers similar functionality for the Algorand blockchain*
+
 ## Development Resources
 
 ### Other Repositories
 
-#### Smart Contracts
+#### Block Foundation Smart Contract Series
 
 |                                   | `Solidity`  | `Teal`      |
 | --------------------------------- | ----------- | ----------- |
