@@ -1,6 +1,11 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: Apache-2.0
 
-pragma solidity ^0.8.6;
+pragma solidity ^0.8.19;
+
+
+// ============================================================================
+// Contracts
+// ============================================================================
 
 /**
  * Land Registry Contract
@@ -24,13 +29,13 @@ contract LandRegistry {
     }
 
 
-    // Mapping
+    // Mappings
     // ========================================================================
 
     mapping (string => Land) public lands;
 
 
-    // Event logging
+    // Events
     // ========================================================================
 
     event LandRegistered(
@@ -59,7 +64,7 @@ contract LandRegistry {
     }
 
 
-    // Functionality
+    // Methds
     // ========================================================================
 
     /**
