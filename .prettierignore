@@ -1,4 +1,7 @@
-# Ignore
+/node_modules
+/lib/**/*
+/CONTRIBUTING.md
+
 package.json
 package-lock.json
 
