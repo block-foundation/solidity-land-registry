@@ -26,6 +26,7 @@
 - [Introduction](#introduction)
 - [Quick Start](#quick-start)
 - [Contract](#contract)
+- [Background](background)
 - [Development Resources](#development-resources)
 - [Academic Resources](#development-resources)
 - [Legal Information](#legal-information)
@@ -35,11 +36,13 @@
 
 <br clear="both"/>
 
+Welcome to Block Foundation's Decentralized Land Registry project - an ambitious venture into the field of blockchain applications. This project is a part of our Smart Contract Series and leverages the full potential of Solidity, Ethereum's native programming language, to deliver a secure and transparent system for land transactions.
+
 ## Introduction
 
-Welcome to the Decentralized Land Registry project, an open-source venture that aims to redefine land transactions with the power of blockchain. Leveraging advanced blockchain technology, this project introduces an innovative way to manage and conduct land transactions transparently, securely, and efficiently.
+Land registries have long been known for their lack of transparency and the potential for fraud, with numerous cases of illegal land acquisition and property disputes marring their history. Our solution, a Decentralized Land Registry, built on the foundation of blockchain technology, addresses these issues by providing a public, transparent, and immutable record of land transactions.
 
-The traditional land registry systems are often fraught with inefficiencies, potential for fraud, and lack of transparency. Our solution, a blockchain-based land registry, addresses these issues head-on by providing an immutable and public record of land transactions, drastically reducing the potential for fraud and manipulation. By combining cryptography and consensus algorithms, blockchain technology ensures that once data is added to the blockchain, it is virtually impossible to change.
+With our smart contract for the land registry system, an owner can register their land, update the land details, and even transfer ownership in a seamless and secure manner. Not only does this bring about a new level of trust and reliability to land transactions, but it also significantly reduces the potential for fraudulent activities.
 
 This is an example of  a smart contract for a land registry system where an owner can register their land, update the land details, and even transfer ownership in a secure way. This contract makes land transactions more transparent and trustworthy.
 
@@ -51,9 +54,17 @@ The primary functionalities include:
 
 3. Ownership Transfer: If the owner decides to transfer their land, the contract allows for a seamless and secure transfer of ownership.
 
+In addition, we've introduced enhanced features:
+
+- Permissions: To prevent unauthorized users from registering or transferring land.
+- Events: To keep track of every time a piece of land is registered or transferred.
+- Sale functionality: Allows landowners to sell their land parcels.
+
 This Decentralized Land Registry project is set to revolutionize how we view land transactions, bringing about a new level of transparency and security. We're excited to embark on this journey towards a more efficient, reliable, and secure system for land transactions, and we warmly invite you to explore, contribute, and grow with us in this endeavor.
 
 ## Quick Start
+
+Before you dive in, make sure you have Node.js and npm installed. You can then proceed to install the necessary dependencies:
 
 > Install
 
@@ -61,7 +72,8 @@ This Decentralized Land Registry project is set to revolutionize how we view lan
 npm i
 ```
 
-> Compile
+> To compile the smart contract:
+
 
 ``` sh
 npm run compile
@@ -84,6 +96,24 @@ Moreover:
 - `onlyLandOwner` modifier to ensures that only the owner of a land parcel can perform certain actions.
 
 *There is also a [PyTeal version](https://github.com/block-foundation/teal-land-registry) of this smart-contract, which offers similar functionality for the Algorand blockchain.*
+
+## Background
+
+### Evolving Land Management Systems
+
+As we move deeper into the 21st century, traditional methods of managing land registries have proven to be insufficient, vulnerable to fraud, and fraught with red tape. In response, our project introduces a pioneering vision for the future of land management – the Decentralized Land Registry. By marrying the infallible security of blockchain with the expansive realm of property management, we're reshaping how property transactions are executed and recorded. This transformative project strives to make property transactions as seamless and as transparent as possible, thereby fortifying trust among parties involved.
+
+### Incorporating Advanced Technologies
+
+Our Decentralized Land Registry project employs advanced technologies, such as Ethereum's blockchain and Solidity, to craft a robust and secure framework for land transactions. The project is part of our Smart Contract Series that aims to demonstrate how blockchain can revolutionize various sectors and industries. The contract allows landowners to register land parcels, update details, and transfer ownership in a tamper-proof, transparent, and efficient manner.
+
+### A Step towards Greater Transparency
+
+Transparency is the cornerstone of any trusted system. Our project ensures complete transparency in land transactions, thereby minimizing disputes and fraudulent activities. By recording transactions on the blockchain, we provide a public and immutable ledger, thus instilling a greater level of confidence in the process. As a result, the Decentralized Land Registry is set to change the way we perceive land transactions, ushering in a new era of trust, transparency, and efficiency.
+
+### Open Source and Community Oriented
+
+As an open-source project, the Decentralized Land Registry encourages community participation and contribution. We believe that the combined efforts and creativity of the global developer community can accelerate the evolution of our project and bring innovative solutions to the fore. We warmly welcome developers worldwide to join our mission, contribute to our codebase, and help us build a more transparent, efficient, and secure system for land transactions.
 
 ## Development Resources
 
