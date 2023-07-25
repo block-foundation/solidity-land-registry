@@ -1,5 +1,6 @@
 <div align="right">
 
+  [![Open in Remote - Containers](https://img.shields.io/static/v1?label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/block-foundation/solidity-land-registry)
   [![license](https://img.shields.io/github/license/block-foundation/solidity-land-registry?color=green&label=license&style=flat-square)](LICENSE.md)
   ![stars](https://img.shields.io/github/stars/block-foundation/solidity-land-registry?color=blue&label=stars&style=flat-square)
   ![contributors](https://img.shields.io/github/contributors/block-foundation/solidity-land-registry?color=blue&label=contributors&style=flat-square)
