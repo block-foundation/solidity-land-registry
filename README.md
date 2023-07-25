@@ -123,22 +123,24 @@ Please refer to the [contribution guidelines](.github/CONTRIBUTING.md) for infor
 > A sample citation (APA 6th edition) might look like:  
 
 ``` txt
-van Vianen, L. B., & Feringa, J. D. (2023). Block Foundation Bibliography (Version WIP) [Computer software]. https://doi.org/http://doi.org/10.5281/zenodo.8173471
+van Vianen, L. B. (2023). solidity-land-registry (Version 0.0.1) [Computer software].
 ```
 
 > BibTeX
 
 ``` bib
-@software{van_Vianen_Block_Foundation_Bibliography_2023,
-author = {van Vianen, Lars Bastiaan and Feringa, Jelle David},
-doi = {http://doi.org/10.5281/zenodo.8173471},
-license = {cc-by-nd-4.0},
-month = jan,
-title = {{Block Foundation Bibliography}},
-url = {https://github.com/block-foundation/bibliography},
-version = {WIP},
-year = {2023}
+@misc{van_vianen_solidity-land-registry_2023,
+	title = {solidity-land-registry},
+	copyright = {CC-BY-SA-4.0},
+	url = {https://github.com/block-foundation/solidity-land-registry},
+	abstract = {Solidity Smart Contract: Decentralized Land Registry},
+	urldate = {2023-07-25},
+	author = {van Vianen, Lars Bastiaan},
+	month = jul,
+	year = {2023},
+	note = {original-date: 2023-07-23T22:52:59Z},
 }
+
 ```
 
 ## Legal Information
