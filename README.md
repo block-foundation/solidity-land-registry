@@ -36,7 +36,7 @@
 
 <br clear="both"/>
 
-Welcome to Block Foundation's Decentralized Land Registry project - an ambitious venture into the field of blockchain applications. This project is a part of our Smart Contract Series and leverages the full potential of Solidity, Ethereum's native programming language, to deliver a secure and transparent system for land transactions.
+**Welcome to Block Foundation's Decentralized Land Registry project - an ambitious venture into the field of blockchain applications. This project is a part of our Smart Contract Series and leverages the full potential of Solidity, Ethereum's native programming language, to deliver a secure and transparent system for land transactions.***
 
 ## Introduction
 
