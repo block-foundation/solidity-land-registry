@@ -10,7 +10,7 @@
 ---
 
 <div>
-    <img align="right" src="https://raw.githubusercontent.com/block-foundation/brand/master/src/logo/logo_gray.png" width="96" alt="Block Foundation Logo">
+    <img align="right" src="https://raw.githubusercontent.com/block-foundation/brand/master/src/src/logo/logo_gray.png" width="96" alt="Block Foundation Logo">
     <h1 align="left">Decentralized Land Registry</h1>
     <h3 align="left">Block Foundation Smart Contract Series [Solidity]</h3>
 </div>
@@ -18,7 +18,7 @@
 ---
 
 <div>
-<img align="right" width="60%" src="https://raw.githubusercontent.com/block-foundation/brand/master/src/image/repository_cover/block_foundation-structure-03-accent.jpg"  alt="Block Foundation">
+<img align="right" width="60%" src="https://raw.githubusercontent.com/block-foundation/brand/master/src/src/image/repository_cover/block_foundation-structure-03-accent.jpg"  alt="Block Foundation">
 <br>
 <details open="open">
 <summary>Table of Contents</summary>
