@@ -90,6 +90,19 @@ Moreover:
 
 ## Development Resources
 
+### Authors
+
+This is an open-source project by the **[Block Foundation](https://www.blockfoundation.io "Block Foundation website")**.
+
+The Block Foundation mission is enabling architects to take back initiative and contribute in solving the mismatch in housing through blockchain technology. Therefore the Block Foundation seeks to unschackle the traditional constraints and construct middle ground between rent and the rigidity of traditional mortgages.
+
+website: [www.blockfoundation.io](https://www.blockfoundation.io "Block Foundation website")
+
+### Contributing
+
+We'd love for you to contribute and to make this project even better than it is today!
+Please refer to the [contribution guidelines](.github/CONTRIBUTING.md) for information.
+
 ### Other Repositories
 
 #### Block Foundation Smart Contract Series
@@ -105,6 +118,31 @@ Moreover:
 | **Rent-to-Own**                   | [**>>>**](https://github.com/block-foundation/solidity-rent-to-own) | [**>>>**](https://github.com/block-foundation/teal-rent-to-own) |
 | **Self-Owning Building**          | [**>>>**](https://github.com/block-foundation/solidity-self-owning-building) | [**>>>**](https://github.com/block-foundation/teal-self-owning-building) |
 | **Smart Home**                    | [**>>>**](https://github.com/block-foundation/solidity-smart-home) | [**>>>**](https://github.com/block-foundation/teal-smart-home) |
+
+## Academic Resources
+
+### Citation
+
+> A sample citation (APA 6th edition) might look like:  
+
+``` txt
+van Vianen, L. B., & Feringa, J. D. (2023). Block Foundation Bibliography (Version WIP) [Computer software]. https://doi.org/http://doi.org/10.5281/zenodo.8173471
+```
+
+> BibTeX
+
+``` bib
+@software{van_Vianen_Block_Foundation_Bibliography_2023,
+author = {van Vianen, Lars Bastiaan and Feringa, Jelle David},
+doi = {http://doi.org/10.5281/zenodo.8173471},
+license = {cc-by-nd-4.0},
+month = jan,
+title = {{Block Foundation Bibliography}},
+url = {https://github.com/block-foundation/bibliography},
+version = {WIP},
+year = {2023}
+}
+```
 
 ## Legal Information
 
