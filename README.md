@@ -147,7 +147,7 @@ flowchart TD
     LandTransferred --> lands
     LandRegistered --> ownerToLands
     LandTransferred --> ownerToLands
-    verifyLand --> ownerToLands
+    verifyLand --> lands
     verifyLand --> ownerToLands
 
     classDef class_light fill:#FFFFFF,color:#041B26,stroke:#041B26,stroke-width:2px;
