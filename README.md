@@ -115,6 +115,8 @@ npm run compile
 
 ## Contract
 
+This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land, or adding events to keep track of every time a piece of land is registered or transferred.
+
 ``` mermaid
 flowchart LR
 
@@ -136,15 +138,11 @@ flowchart LR
     transferLand --> LandTransferred
     sellLand --> LandTransferred
 
-
     classDef class_light fill:#FFFFFF,color:#041B26,stroke:#041B26,stroke-width:2px;
     classDef class_neutral fill:#E1E4E5,color:#041B26,stroke:#041B26,stroke-width:2px;
     classDef class_dark fill:#041B26,color:#FFFFFF,stroke:#041B26,stroke-width:2px;
+
 ```
-
-This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land, or adding events to keep track of every time a piece of land is registered or transferred.
-
-In this contract:
 
 - `registerLand()` allows an address to register a new parcel of land with its location and a unique parcel ID. Emits a `LandRegistered` event when land is registered.
 - `transferLand()` allows the current owner of a land parcel to transfer it to a new owner. Emits a `LandTransferred` event when land is transferred.
