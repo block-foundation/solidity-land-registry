@@ -117,6 +117,11 @@ npm run compile
 
 ``` mermaid
 flowchart LR
+
+    a["`The **cat**
+in the hat`"]:::class_light
+
+
     registerLand:::class_light --> transferLand:::class_neutral --> sellLand:::class_dark
     classDef class_light fill:#FFFFFF,color:#041B26,stroke:#041B26,stroke-width:2px;
     classDef class_neutral fill:#E1E4E5,color:#041B26,stroke:#041B26,stroke-width:2px;
