@@ -38,7 +38,7 @@ contract LandRegistry {
     /// @param owner The owner
     /// @param location The location
     /// @param parcelID The parcelID
-    /// @param price The price
+    /// @param price The price handles selling land parcels.
     struct Land {
         address payable owner;
         string location;
@@ -57,7 +57,7 @@ contract LandRegistry {
     // Events
     // ========================================================================
 
-    /// @notice LandRegistered Event
+    /// @notice Land Registered Event
     /// @param owner The owner
     /// @param parcelID The parcelID
     event LandRegistered(
@@ -65,7 +65,7 @@ contract LandRegistry {
         string parcelID
     );
 
-    /// @notice LandTransferred Event
+    /// @notice Land Transferred Event
     /// @param oldOwner The oldOwner
     /// @param newOwner The newOwner
     /// @param parcelID The parcelID
@@ -79,7 +79,8 @@ contract LandRegistry {
     // Modifiers
     // ========================================================================
 
-    /// @notice onlyLandOwner Modifier
+    /// @notice The onlyLandOwner modifier  ensures that only the owner of a
+    /// land parcel can perform certain actions.
     /// @param _parcelID The _parcelID
     modifier onlyLandOwner(
         string memory _parcelID
@@ -95,10 +96,12 @@ contract LandRegistry {
     // Methods
     // ========================================================================
 
-    /// @notice Register Land
-    /// @param _location The location
-    /// @param _parcelID The parcelID
-    /// @param _price The price
+    /// @notice Register Land Function allows an address to register a new 
+    /// parcel of land with its location and a unique parcel ID. Emits a 
+    /// LandRegistered event when land is registered.
+    /// @param _location The location of the parcel
+    /// @param _parcelID The parcel of land
+    /// @param _price The price of the parcel
     function registerLand(
         string memory _location,
         string memory _parcelID,
@@ -127,9 +130,11 @@ contract LandRegistry {
 
     }
 
-    /// @notice Transfer Land
-    /// @param _newOwner The new owner
-    /// @param _parcelID The parcelID
+    /// @notice Transfer Land Function allows the current owner of a land
+    /// parcel to transfer it to a new owner. Emits a LandTransferred event
+    /// when land is transferred.
+    /// @param _newOwner The new owner of the parcel
+    /// @param _parcelID The parcel of land
     function transferLand(
         address payable _newOwner,
         string memory _parcelID
@@ -144,9 +149,11 @@ contract LandRegistry {
 
     }
 
-    /// @notice Sell Land
-    /// @param _buyer The buyer
-    /// @param _parcelID The parcelID
+    /// @notice Sell Land Function allows a landowner to sell their land to a
+    /// buyer. This also involves the transfer of Ether from the buyer to the
+    //  seller, representing the payment for the land.
+    /// @param _buyer The buyer of the parcel
+    /// @param _parcelID The parcel of land
     function sellLand(
         address payable _buyer,
         string memory _parcelID
@@ -164,8 +171,9 @@ contract LandRegistry {
 
     }
 
-    /// @notice Verify Land
-    /// @param _parcelID The parcelID
+    /// @notice Verify Land Function allows anyone to verify the details of a
+    /// land parcel.
+    /// @param _parcelID The parcel of land
     /// @return [_parcelID] array
     function verifyLand(
         string memory _parcelID
