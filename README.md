@@ -134,9 +134,21 @@ flowchart TD
     LandTransferred["(event)
     LandTransferred"]:::class_light
 
+    lands["(mapping)
+    lands"]:::class_neutral
+    ownerToLands["(mapping)
+    ownerToLands"]:::class_neutral
+
+
     registerLand --> LandRegistered
     transferLand --> LandTransferred
     sellLand --> LandTransferred
+    LandRegistered --> lands
+    LandTransferred --> lands
+    LandRegistered --> ownerToLands
+    LandTransferred --> ownerToLands
+    verifyLand --> ownerToLands
+    verifyLand --> ownerToLands
 
     classDef class_light fill:#FFFFFF,color:#041B26,stroke:#041B26,stroke-width:2px;
     classDef class_neutral fill:#E1E4E5,color:#041B26,stroke:#041B26,stroke-width:2px;
