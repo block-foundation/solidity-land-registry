@@ -75,6 +75,28 @@ npm run compile
 This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land, or adding events to keep track of every time a piece of land is registered or transferred.
 
 ``` mermaid
+classDiagram 
+
+    class LandRegistry {
+        -Land lands
+        +registerLand(string, string, uint256)
+        +transferLand(address, string)
+        +sellLand(address, string)
+        +verifyLand(string)
+    }
+
+    class Land {
+        -address owner
+        -string location
+        -string parcelID
+        -uint256 price
+    }
+
+    LandRegistry "1" -- "*" Land: has
+
+```
+
+``` mermaid
 flowchart TD
 
     registerLand["(mehod)
