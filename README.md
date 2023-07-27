@@ -54,48 +54,6 @@ The primary functionalities include:
 
 3. Ownership Transfer: If the owner decides to transfer their land, the contract allows for a seamless and secure transfer of ownership.
 
-In addition, we've introduced enhanced features:
-
-- Permissions: To prevent unauthorized users from registering or transferring land.
-- Events: To keep track of every time a piece of land is registered or transferred.
-- Sale functionality: Allows landowners to sell their land parcels.
-
-This Decentralized Land Registry project is set to revolutionize how we view land transactions, bringing about a new level of transparency and security. We're excited to embark on this journey towards a more efficient, reliable, and secure system for land transactions, and we warmly invite you to explore, contribute, and grow with us in this endeavor.
-
-
-
-HM Land Registry is an official organization in the United Kingdom that maintains a comprehensive and secure record of all registered land and property. This includes information about ownership, charges, easements, rights of way, and other interests affecting the land. It ensures that the records are accurate, thereby giving certainty of title to owners. These records are publicly accessible, allowing anyone to investigate the status of a parcel of land or property before making a purchase.
-
-The primary services offered by HM Land Registry include:
-
-1. Registering title to freehold and leasehold property.
-
-2. Recording transactions that impact the registered title, such as transfers of ownership, mortgages, and leases.
-
-3. Providing guaranteed title to registered estates and interests in land.
-
-4. Providing a state-backed indemnity scheme for loss incurred as a result of a mistake or omission in the register or loss incurred in rectifying a mistake.
-
-Here are some of the key differences between a traditional land registry like HM Land Registry and the blockchain-based LandRegistry contract described above:
-
-1. **Decentralization**: The LandRegistry contract is based on a blockchain platform (like Ethereum), which is decentralized and not controlled by any single entity. This is in contrast to HM Land Registry, which is a government body.
-
-2. **Transparency and Trust**: With the LandRegistry contract, all transactions are publicly visible and can't be changed once added to the blockchain. This might increase transparency and trust among users.
-
-3. **Automation**: The LandRegistry contract uses smart contracts to automate processes such as registration and transfer of land. These operations are performed instantly, provided that they satisfy all the conditions defined in the contract. This contrasts with the HM Land Registry, which has a more manual, often lengthy process.
-
-4. **Ownership Verification**: The LandRegistry contract allows instantaneous verification of ownership by simply querying the contract. In contrast, HM Land Registry requires a more involved process of requesting documents and verifying them.
-
-5. **Middlemen**: Blockchain-based registries could potentially eliminate the need for intermediaries such as lawyers and notaries, thereby reducing costs. Traditional registries, on the other hand, often require several intermediaries to ensure the legality and validity of transactions.
-
-6. **Regulatory Oversight and Legal Framework**: The HM Land Registry operates under a clear and established legal framework that provides legal recourse in cases of disputes. The legal status and implications of blockchain-based land registries, however, are still developing and may vary by jurisdiction.
-
-7. **Access and Control**: Access to and control over the data in the HM Land Registry is limited to the organization itself and authorized individuals. With a blockchain-based contract, access is much more open, potentially allowing anyone to view and interact with the contract, provided they have the necessary blockchain infrastructure.
-
-8. **Security**: While both systems have robust security measures in place, they face different kinds of threats. Blockchain contracts like LandRegistry can be vulnerable to bugs in the code or issues inherent to the blockchain platform itself. Traditional land registries, on the other hand, need to guard against issues like physical data damage or loss, unauthorized access, or hacking.
-
-
-
 ## Quick Start
 
 Before you dive in, make sure you have Node.js and npm installed. You can then proceed to install the necessary dependencies:
@@ -107,7 +65,6 @@ npm i
 ```
 
 > To compile the smart contract:
-
 
 ``` sh
 npm run compile
@@ -161,6 +118,7 @@ flowchart TD
 - `transferLand()` allows the current owner of a land parcel to transfer it to a new owner. Emits a `LandTransferred` event when land is transferred.
 - `sellLand()` allows a landowner to sell their land to a buyer. This also involves the transfer of Ether (the currency on Ethereum) from the buyer to the seller, representing the payment for the land.
 - `verifyLand()` allows anyone to verify the details of a land parcel.
+- `listLandsByOwner()` allows for querying all land parcels owned by a specific `address`, making it easier to get an overview of one's properties
 
 Moreover:
 
