@@ -118,11 +118,25 @@ npm run compile
 ``` mermaid
 flowchart LR
 
-    a["`The **cat**
-in the hat`"]:::class_light
+    registerLand["(mehod)
+    registerLand"]:::class_dark
+    transferLand["(mehod)
+    transferLand"]:::class_dark
+    sellLand["(mehod)
+    sellLand"]:::class_dark
+    verifyLand["(mehod)
+    verifyLand"]:::class_dark
+
+    LandRegistered["(event)
+    LandRegistered"]:::class_light
+    LandTransferred["(event)
+    LandTransferred"]:::class_light
+
+    registerLand --> LandRegistered
+    transferLand --> LandTransferred
+    sellLand --> LandTransferred
 
 
-    registerLand:::class_light --> transferLand:::class_neutral --> sellLand:::class_dark
     classDef class_light fill:#FFFFFF,color:#041B26,stroke:#041B26,stroke-width:2px;
     classDef class_neutral fill:#E1E4E5,color:#041B26,stroke:#041B26,stroke-width:2px;
     classDef class_dark fill:#041B26,color:#FFFFFF,stroke:#041B26,stroke-width:2px;
@@ -132,8 +146,8 @@ This is a simple implementation and can be expanded to include more complex feat
 
 In this contract:
 
-- `registerLand()` allows an address to register a new parcel of land with its location and a unique parcel ID. Emits a LandRegistered event when land is registered.
-- `transferLand()` allows the current owner of a land parcel to transfer it to a new owner. Emits a LandTransferred event when land is transferred.
+- `registerLand()` allows an address to register a new parcel of land with its location and a unique parcel ID. Emits a `LandRegistered` event when land is registered.
+- `transferLand()` allows the current owner of a land parcel to transfer it to a new owner. Emits a `LandTransferred` event when land is transferred.
 - `sellLand()` allows a landowner to sell their land to a buyer. This also involves the transfer of Ether (the currency on Ethereum) from the buyer to the seller, representing the payment for the land.
 - `verifyLand()` allows anyone to verify the details of a land parcel.
 
