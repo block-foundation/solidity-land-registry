@@ -115,6 +115,14 @@ npm run compile
 
 ## Contract
 
+``` mermaid
+flowchart LR
+    registerLand:::class_light --> transferLand:::class_neutral --> sellLand:::class_dark
+    classDef class_light fill:#FFFFFF,color:#041B26,stroke:#041B26,stroke-width:2px;
+    classDef class_neutral fill:#E1E4E5,color:#041B26,stroke:#041B26,stroke-width:2px;
+    classDef class_dark fill:#041B26,color:#FFFFFF,stroke:#041B26,stroke-width:2px;
+```
+
 This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land, or adding events to keep track of every time a piece of land is registered or transferred.
 
 In this contract:
@@ -229,8 +237,8 @@ Also see [LICENSE](https://github.com/block-foundation/community/blob/master/LIC
 
 **THIS SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
+## References
 
-
-## Footnotes
+For more research resources, please also visit our general [bibliography](https://github.com/block-foundation/bibliography).
 
 [^1]: Ameyaw, P. D., & de Vries, W. T. (2021). Toward Smart Land Management: Land Acquisition and the Associated Challenges in Ghana. A Look into a Blockchain Digital Land Registry for Prospects. Land, 10(3), Article 3. https://doi.org/10.3390/land10030239
