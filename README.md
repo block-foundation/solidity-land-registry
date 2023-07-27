@@ -72,7 +72,9 @@ npm run compile
 
 ## Contract
 
-This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land, or adding events to keep track of every time a piece of land is registered or transferred.
+This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land.
+
+### Class Overview
 
 ``` mermaid
 classDiagram 
@@ -92,9 +94,16 @@ classDiagram
         -uint256 price
     }
 
+
     LandRegistry "1" -- "*" Land: has
 
+    note for LandRegistry "can register\ncan transfer\ncan sell\ncan verify"
+    note for Land "can be owned\nhas a location\nhas a name\nhas a price"
+
+
 ```
+
+### Class Flow
 
 ``` mermaid
 flowchart TD
