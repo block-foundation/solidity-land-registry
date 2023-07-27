@@ -115,7 +115,6 @@ flowchart TD
     sellLand["(mehod)
     sellLand"]:::class_dark
 
-
     LandRegistered["(event)
     LandRegistered"]:::class_light
     LandTransferred["(event)
@@ -192,6 +191,8 @@ We'd love for you to contribute and to make this project even better than it is 
 Please refer to the [contribution guidelines](.github/CONTRIBUTING.md) for information.
 
 ### Other Repositories
+
+- https://github.com/vrii14/Land-Registration-with-Blockchain
 
 #### Block Foundation Smart Contract Series
 
