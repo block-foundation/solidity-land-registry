@@ -118,7 +118,7 @@ npm run compile
 This is a simple implementation and can be expanded to include more complex features, like adding permissions to prevent unauthorized people from registering or transferring land, or adding events to keep track of every time a piece of land is registered or transferred.
 
 ``` mermaid
-flowchart LR
+flowchart TD
 
     registerLand["(mehod)
     registerLand"]:::class_dark
