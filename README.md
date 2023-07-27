@@ -36,11 +36,11 @@
 
 <br clear="both"/>
 
-**Welcome to Block Foundation's Decentralized Land Registry project - an ambitious venture into the field of blockchain applications. This project is a part of our Smart Contract Series and leverages the full potential of Solidity, Ethereum's native programming language, to deliver a secure and transparent system for land transactions.***
+**Welcome to Block Foundation's Decentralized Land Registry project - an ambitious venture into the field of blockchain applications. This project is a part of our Smart Contract Series and leverages the full potential of Solidity, Ethereum's native programming language, to deliver a secure and transparent system for land transactions.**
 
 ## Introduction
 
-Land registries have long been known for their lack of transparency and the potential for fraud, with numerous cases of illegal land acquisition and property disputes marring their history. Our solution, a Decentralized Land Registry, built on the foundation of blockchain technology, addresses these issues by providing a public, transparent, and immutable record of land transactions.
+Land registries have long been known for their lack of transparency and the potential for fraud, with numerous cases of illegal land acquisition and property disputes marring their history [^1]. Our solution, a Decentralized Land Registry, built on the foundation of blockchain technology, addresses these issues by providing a public, transparent, and immutable record of land transactions.
 
 With our smart contract for the land registry system, an owner can register their land, update the land details, and even transfer ownership in a seamless and secure manner. Not only does this bring about a new level of trust and reliability to land transactions, but it also significantly reduces the potential for fraudulent activities.
 
@@ -61,6 +61,40 @@ In addition, we've introduced enhanced features:
 - Sale functionality: Allows landowners to sell their land parcels.
 
 This Decentralized Land Registry project is set to revolutionize how we view land transactions, bringing about a new level of transparency and security. We're excited to embark on this journey towards a more efficient, reliable, and secure system for land transactions, and we warmly invite you to explore, contribute, and grow with us in this endeavor.
+
+
+
+HM Land Registry is an official organization in the United Kingdom that maintains a comprehensive and secure record of all registered land and property. This includes information about ownership, charges, easements, rights of way, and other interests affecting the land. It ensures that the records are accurate, thereby giving certainty of title to owners. These records are publicly accessible, allowing anyone to investigate the status of a parcel of land or property before making a purchase.
+
+The primary services offered by HM Land Registry include:
+
+1. Registering title to freehold and leasehold property.
+
+2. Recording transactions that impact the registered title, such as transfers of ownership, mortgages, and leases.
+
+3. Providing guaranteed title to registered estates and interests in land.
+
+4. Providing a state-backed indemnity scheme for loss incurred as a result of a mistake or omission in the register or loss incurred in rectifying a mistake.
+
+Here are some of the key differences between a traditional land registry like HM Land Registry and the blockchain-based LandRegistry contract described above:
+
+1. **Decentralization**: The LandRegistry contract is based on a blockchain platform (like Ethereum), which is decentralized and not controlled by any single entity. This is in contrast to HM Land Registry, which is a government body.
+
+2. **Transparency and Trust**: With the LandRegistry contract, all transactions are publicly visible and can't be changed once added to the blockchain. This might increase transparency and trust among users.
+
+3. **Automation**: The LandRegistry contract uses smart contracts to automate processes such as registration and transfer of land. These operations are performed instantly, provided that they satisfy all the conditions defined in the contract. This contrasts with the HM Land Registry, which has a more manual, often lengthy process.
+
+4. **Ownership Verification**: The LandRegistry contract allows instantaneous verification of ownership by simply querying the contract. In contrast, HM Land Registry requires a more involved process of requesting documents and verifying them.
+
+5. **Middlemen**: Blockchain-based registries could potentially eliminate the need for intermediaries such as lawyers and notaries, thereby reducing costs. Traditional registries, on the other hand, often require several intermediaries to ensure the legality and validity of transactions.
+
+6. **Regulatory Oversight and Legal Framework**: The HM Land Registry operates under a clear and established legal framework that provides legal recourse in cases of disputes. The legal status and implications of blockchain-based land registries, however, are still developing and may vary by jurisdiction.
+
+7. **Access and Control**: Access to and control over the data in the HM Land Registry is limited to the organization itself and authorized individuals. With a blockchain-based contract, access is much more open, potentially allowing anyone to view and interact with the contract, provided they have the necessary blockchain infrastructure.
+
+8. **Security**: While both systems have robust security measures in place, they face different kinds of threats. Blockchain contracts like LandRegistry can be vulnerable to bugs in the code or issues inherent to the blockchain platform itself. Traditional land registries, on the other hand, need to guard against issues like physical data damage or loss, unauthorized access, or hacking.
+
+
 
 ## Quick Start
 
@@ -194,3 +228,9 @@ Also see [LICENSE](https://github.com/block-foundation/community/blob/master/LIC
 ### Disclaimer
 
 **THIS SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+
+
+## Footnotes
+
+[^1]: Ameyaw, P. D., & de Vries, W. T. (2021). Toward Smart Land Management: Land Acquisition and the Associated Challenges in Ghana. A Look into a Blockchain Digital Land Registry for Prospects. Land, 10(3), Article 3. https://doi.org/10.3390/land10030239
