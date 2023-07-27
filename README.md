@@ -126,8 +126,7 @@ flowchart TD
     transferLand"]:::class_dark
     sellLand["(mehod)
     sellLand"]:::class_dark
-    verifyLand["(mehod)
-    verifyLand"]:::class_dark
+
 
     LandRegistered["(event)
     LandRegistered"]:::class_light
@@ -139,6 +138,8 @@ flowchart TD
     ownerToLands["(mapping)
     ownerToLands"]:::class_neutral
 
+    verifyLand["(mehod)
+    verifyLand"]:::class_dark
 
     registerLand --> LandRegistered
     transferLand --> LandTransferred
@@ -147,8 +148,8 @@ flowchart TD
     LandTransferred --> lands
     LandRegistered --> ownerToLands
     LandTransferred --> ownerToLands
-    verifyLand --> lands
-    verifyLand --> ownerToLands
+    lands <--> verifyLand
+    ownerToLands <--> verifyLand
 
     classDef class_light fill:#FFFFFF,color:#041B26,stroke:#041B26,stroke-width:2px;
     classDef class_neutral fill:#E1E4E5,color:#041B26,stroke:#041B26,stroke-width:2px;
