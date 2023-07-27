@@ -44,6 +44,7 @@ contract LandRegistry {
         string location;
         string parcelID;
         uint256 price;
+        // bool isRegistered;
     }
 
 
@@ -125,7 +126,8 @@ contract LandRegistry {
             _parcelID,
             _price
         );
-        
+
+
         // Add the parcelID to the list of lands owned by the sender
         ownerToLands[msg.sender].push(_parcelID);
 
@@ -137,11 +139,16 @@ contract LandRegistry {
 
     }
 
-    /// @notice Transfer Land Function allows the current owner of a land
-    /// parcel to transfer it to a new owner. Emits a LandTransferred event
-    /// when land is transferred.
-    /// @param _newOwner The new owner of the parcel
-    /// @param _parcelID The parcel of land
+
+    /**
+    *   Transfer Land Method
+    *   @notice transferLand allows the current owner of a land parcel to
+    *           transfer it  to a new owner. Emits a LandTransferred event when 
+                land is transferred.
+        @dev 
+        @param  _newOwner The new owner of the parcel
+        @param  _parcelID The parcel of land
+     */
     function transferLand(
         address payable _newOwner,
         string memory _parcelID
@@ -159,7 +166,7 @@ contract LandRegistry {
 
     /// @notice Sell Land Function allows a landowner to sell their land to a
     /// buyer. This also involves the transfer of Ether from the buyer to the
-    //  seller, representing the payment for the land.
+    /// seller, representing the payment for the land.
     /// @param _buyer The buyer of the parcel
     /// @param _parcelID The parcel of land
     function sellLand(
