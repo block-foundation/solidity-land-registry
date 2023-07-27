@@ -50,8 +50,11 @@ contract LandRegistry {
     // Mappings
     // ========================================================================
 
-    /// @notice 
+    /// @notice Keep track of all the lands
     mapping (string => Land) public lands;
+
+    /// @notice Keep track of all the lands owned by a particular address
+    mapping (address => string[]) public ownerToLands;
 
 
     // Events
@@ -74,6 +77,7 @@ contract LandRegistry {
         address indexed newOwner,
         string parcelID
     );
+
 
 
     // Modifiers
@@ -122,6 +126,9 @@ contract LandRegistry {
             _price
         );
         
+        // Add the parcelID to the list of lands owned by the sender
+        ownerToLands[msg.sender].push(_parcelID);
+
         // Emit the event
         emit LandRegistered(
             msg.sender,
@@ -148,6 +155,7 @@ contract LandRegistry {
         emit LandTransferred(oldOwner, _newOwner, _parcelID);
 
     }
+
 
     /// @notice Sell Land Function allows a landowner to sell their land to a
     /// buyer. This also involves the transfer of Ether from the buyer to the
@@ -198,6 +206,17 @@ contract LandRegistry {
             lands[_parcelID].price
         );
 
+    }
+
+    /// @notice listLandsByOwner Function to list all the lands owned by an address
+    /// @param _owner The owner of land
+    /// @return [_parcownerToLandselID] array
+    function listLandsByOwner(
+        address _owner
+    ) public view returns (
+        string[] memory
+    ) {
+        return ownerToLands[_owner];
     }
 
 }
