@@ -1,8 +1,10 @@
 {
     "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "JuanBlanco.solidity",
-        "ms-vscode-remote.remote-containers"
+        "ms-vscode-remote.remote-containers",
+        "dbaeumer.vscode-eslint", 
+        "ms-vscode.vscode-typescript-tslint-plugin", 
+        "esbenp.prettier-vscode", 
+        "JuanBlanco.solidity"
     ],
     "unwantedRecommendations": []
 }
