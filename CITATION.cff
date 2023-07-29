@@ -1,8 +1,18 @@
 cff-version: 1.2.0
-title: solidity-land-registry
+title: "LandRegistry: A Blockchain-based Land Registry System"
+keywords: 
+  - Solidity
+  - Ethereum
+  - Land Registry
+  - Smart Contract
+  - Blockchain
 version: 0.0.1
 date-released: 2023-07-01
+repository-code: "https://github.com/block-foundation/solidity-land-registry"
 url: "https://github.com/block-foundation/solidity-land-registry"
+# doi: "10.5281/zenodo.XXXXXXX"
+license: "Apache-2.0"
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
 message: >-
   If you use this software, please cite it using
   the metadata from this file.
