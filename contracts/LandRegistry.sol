@@ -273,5 +273,4 @@ contract LandRegistry {
         return ownerToLands[_owner];
     }
 
-
 }
