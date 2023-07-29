@@ -13,6 +13,7 @@ of the Block Foundation, as found on our GitHub repositories at:
 ---
 
 **Table of Contents**
+
   * [Security Contact](#security-contact)
   * [Security Conventions](#security-conventions)
   * [Vulnerability Reporting](#vulnerability-reporting)
