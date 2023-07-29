@@ -1,3 +1,16 @@
 {
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "editor.tabSize": 4,
+    "editor.autoIndent": "full",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true
 }
