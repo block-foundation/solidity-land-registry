@@ -1,22 +1,44 @@
-;
-; Global Editor Config for Adaptive Labbers
-;
-; This is an ini style configuration. See http://editorconfig.org/ for more information on this file.
-;
-; Top level editor config.
+# top-most EditorConfig file
 root = true
 
-; Always use Unix style new lines with new line ending on every file and trim whitespace
+# Unix-style newlines with a newline ending every file
 [*]
-charset = utf-8 # added
+charset = utf-8
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-; Python: PEP8 defines 4 spaces for indentation
+
+# Matches multiple files with brace expansion notation
+[*.{js,ts,sol,md}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 4
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+# Indentation override for all JS under lib directory
+[lib/**.js]
+indent_style = space
+indent_size = 4
+
+# Matches the exact file .editorconfig
+[.editorconfig]
+indent_style = space
+indent_size = 4
+
+# Python: PEP8 defines 4 spaces for indentation
 [*.py]
 indent_style = space
 indent_size = 4
-; Salt state files, YAML format, 2 spaces
+
+# Salt state files, YAML format, 2 spaces
 [*.sls, *.yaml, *.yml]
 indent_style = space
 indent_size = 2
