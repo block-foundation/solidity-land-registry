@@ -162,15 +162,16 @@ contract LandRegistry {
 
     /**
     *   transferLand
-    *   @notice This function allows the current owner of a parcel of land to transfer 
-    *   their ownership rights to a new owner. This operation does not involve any transfer of 
-    *   funds or payment. Once the transfer is successful, a LandTransferred event will be emitted,
+    *   @notice This function allows the current owner of a parcel of land 
+    *               to transfer their ownership rights to a new owner. This
+    *               operation does not involve any transfer of funds or 
+                    payment. Once the transfer is successful, a LandTransferred event will be emitted,
     *   notifying all contract participants of the change in ownership.
     *   @dev This function requires that the sender is the current owner of the land parcel. If not,
     *   the function will throw an exception and halt execution. The ownership check is performed 
     *   through the onlyLandOwner modifier.
-    *   @param _newOwner The Ethereum address of the new owner of the land parcel.
-    *   @param _parcelID A unique identifier for the parcel of land. This ID is used to find 
+    *   @param      _newOwner The Ethereum address of the new owner of the land parcel.
+    *   @param      _parcelID A unique identifier for the parcel of land. This ID is used to find 
     *   the land parcel within the contract's storage and update its owner property.
     */
     function transferLand(
