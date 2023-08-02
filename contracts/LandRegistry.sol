@@ -26,9 +26,27 @@ pragma solidity ^0.8.9;
 /**
  *  @title Land Registry Contract
  *  @author Lars Bastiaan van Vianen
- *  @notice You can use this contract for only the most basic simulation
- *  @dev Alpha version
- *  @custom:experimental This is an experimental contract.
+ *  @notice This contract simulates a basic land registry system. It provides 
+ *  functionalities for registering, transferring, and selling parcels of land.
+ *  It also provides query functionalities for verifying a land's details and
+ *  listing all lands owned by a certain address.
+ *  This contract should be used for simulation and educational purposes.
+ *  @dev This contract is in its alpha version. The land registry system is
+ *  abstracted to a basic level. It does not take into account many real-world
+ *  factors that a complete land registry system might need, such as zoning
+ *  laws, land rights, restrictions on the property, etc.
+ *  This contract is not audited and therefore should not be used
+ *  in production.
+ *  @custom:experimental This is an experimental contract. It is intended as a
+ *  demonstration for basic contract functionalities like storing data in the
+ *  contract, using modifiers, and emitting events.
+ *  Changes may be made without maintaining backward compatibility.
+ *  @custom:gas-usage Certain functions like `registerLand`, `transferLand`
+ *  and `sellLand` may consume more gas due to the operations involved such as
+ *  updating the contract's storage and emitting events.
+ *  @custom:potential-updates Future updates may include handling more complex
+ *  land rights, integration with real-world data, improving gas efficiency,
+ *  adding access control for admin operations, and more comprehensive testing.
  */
 contract LandRegistry {
 
@@ -230,20 +248,22 @@ contract LandRegistry {
 
     /**
      *  sellLand
-     *  @notice This function allows the current owner of a parcel of land to sell their 
-     *  parcel to a buyer. This involves the transfer of ownership rights and the payment 
-     *  of the purchase price in Ether from the buyer to the seller. Once the sale is successful, 
-     *  a LandTransferred event will be emitted, notifying all contract participants of the 
+     *  @notice This function allows the current owner of a parcel of land to
+     *  sell their parcel to a buyer. This involves the transfer of ownership
+     *  rights and the payment of the purchase price in Ether from the buyer
+     *  to the seller. Once the sale is successful, a LandTransferred event
+     *  will be emitted, notifying all contract participants of the 
      *  change in ownership.
-     *  @dev This function requires that the sender is the current owner of the land parcel. If not,
-     *  the function will throw an exception and halt execution. The ownership check is performed 
-     *  through the onlyLandOwner modifier.
-     *  @param _buyer The Ethereum address of the buyer of the land parcel. This address will 
-     *  become the new owner of the land and will be responsible for transferring the purchase 
-     *  price to the seller.
-     *  @param _parcelID A unique identifier for the parcel of land. This ID is used to find 
-     *  the land parcel within the contract's storage, update its owner property, and determine 
-     *  the purchase price to be transferred.
+     *  @dev This function requires that the sender is the current owner of the
+     *  land parcel. If not, the function will throw an exception and halt
+     *  execution. The ownership check is performed through the onlyLandOwner
+     *  modifier.
+     *  @param _buyer The Ethereum address of the buyer of the land parcel.
+     *  This address will become the new owner of the land and will be 
+     *  responsible for transferring the purchase price to the seller.
+     *  @param _parcelID A unique identifier for the parcel of land. This ID is
+     *  used to find the land parcel within the contract's storage, update its
+     *  owner property, and determine the purchase price to be transferred.
      */
     function sellLand(
         address payable _buyer,
@@ -267,9 +287,11 @@ contract LandRegistry {
      *  and price for the given parcel ID from the contract's storage and
      *  returns it to the caller. If no such parcel ID exists in the contract's
      *  storage, it will throw an exception and halt execution.
-     *  @dev The function is read-only and does not modify the state of the contract. 
-     *  @param _parcelID A unique identifier for the parcel of land. This ID is used to 
-     *  find the land parcel within the contract's storage and return its details.
+     *  @dev The function is read-only and does not modify the state of 
+     *  the contract. 
+     *  @param _parcelID A unique identifier for the parcel of land. This ID is
+     *  used to find the land parcel within the contract's storage and return
+     *  its details.
      *  @return owner The Ethereum address of the owner of the land parcel.
      *  @return location The geographical location of the land parcel.
      *  @return parcelID The unique identifier for the parcel of land.
@@ -300,13 +322,15 @@ contract LandRegistry {
 
     /**
      *  listLandsByOwner
-     *  @notice This function allows anyone to fetch a list of all parcel IDs owned 
-     *  by a particular address. This can be useful to track all properties owned by 
-     *  a single address and manage their land portfolio.
-     *  @dev The function is read-only and does not modify the state of the contract. 
-     *  @param _owner The Ethereum address of the owner whose lands are to be listed.
-     *  @return parcelIDs An array of strings containing the unique identifiers for 
-     *  each land parcel owned by the specified address.
+     *  @notice This function allows anyone to fetch a list of all parcel IDs
+     *  owned by a particular address. This can be useful to track all
+     *  properties owned by a single address and manage their land portfolio.
+     *  @dev The function is read-only and does not modify the state of 
+     *  the contract. 
+     *  @param _owner The Ethereum address of the owner whose lands are to
+     *  be listed.
+     *  @return parcelIDs An array of strings containing the unique identifiers
+     *  for each land parcel owned by the specified address.
      */
     function listLandsByOwner(
         address _owner
