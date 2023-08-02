@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.202.5/containers/ubuntu
 {
-	"name": "Ubuntu",
+	"name": "Solidity Development",
 	"runArgs": ["--init"],
 	"build": {
 		"dockerfile": "Dockerfile",
@@ -11,15 +11,23 @@
 	},
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": { 
+		// "terminal.integrated.shell.linux": "/bin/bash"
+	},
 
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"editorconfig.editorconfig",
 		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
 		"juanblanco.solidity",
 		"hbenl.vscode-mocha-test-adapter"
 	],
+
+	// "postCreateCommand": "npm install",
+	"postCreateCommand": "npm install -g truffle ganache-cli",
+
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [7545, 8545],
@@ -30,3 +38,4 @@
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
+
