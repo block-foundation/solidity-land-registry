@@ -90,7 +90,8 @@ contract LandRegistry {
     /**
      *  LandRegistered Event
      *  @notice This event is emitted when a new land parcel is registered.
-     *  @dev The event logs the owner's address and the parcel ID of the newly registered land.
+     *  @dev The event logs the owner's address and the parcel ID of the newly
+     *  registered land.
      *  @param owner The owner's address.
      *  @param parcelID The unique parcel ID of the registered land parcel.
      */
@@ -101,8 +102,10 @@ contract LandRegistry {
 
     /**
      *  LandTransferred Event
-     *  @notice This event is emitted when a land parcel is transferred from one owner to another.
-     *  @dev The event logs the old owner's address, the new owner's address, and the parcel ID of the transferred land parcel.
+     *  @notice This event is emitted when a land parcel is transferred from
+     *  one owner to another.
+     *  @dev The event logs the old owner's address, the new owner's address,
+     *  and the parcel ID of the transferred land parcel.
      *  @param oldOwner The address of the previous owner.
      *  @param newOwner The address of the new owner.
      *  @param parcelID The unique parcel ID of the transferred land parcel.
@@ -114,20 +117,21 @@ contract LandRegistry {
     );
 
 
-
     // Modifiers
     // ========================================================================
 
     /**
      *  onlyLandOwner
-     *  @notice This modifier is used to restrict access to only the current owner of a specific land parcel. 
-     *  It's often used in functions that update or change the state of a land parcel. If the 
-     *  function is invoked by an address that is not the current owner, it will throw an exception 
-     *  and stop execution.
-     *  @dev It checks if the message sender is the owner of the land parcel specified by _parcelID. 
-     *  If it is not, the execution of the function will stop, and an error message will be thrown.
-     *  @param _parcelID The unique identifier of a land parcel. It is used to look up the current 
-     *  owner of the land in the 'lands' mapping.
+     *  @notice This modifier is used to restrict access to only the current
+     *  owner of a specific land parcel. 
+     *  It's often used in functions that update or change the state of a land
+     *  parcel. If the function is invoked by an address that is not the
+     *  current owner, it will throw an exception and stop execution.
+     *  @dev It checks if the message sender is the owner of the land parcel
+     *  specified by _parcelID. If it is not, the execution of the function will
+     *  stop, and an error message will be thrown.
+     *  @param _parcelID The unique identifier of a land parcel. It is used to
+     *  look up the current owner of the land in the 'lands' mapping.
      */
     modifier onlyLandOwner(
         string memory _parcelID
@@ -144,27 +148,33 @@ contract LandRegistry {
 
     /**
      *  registerLand
-     *  @notice This function allows an Ethereum address to register a new parcel of land in the contract. 
-     *  The parcel's location, unique parcel ID, and price are all required to perform this operation. 
-     *  Once the land is successfully registered, a LandRegistered event will be emitted, notifying all 
-     *  contract participants of the newly registered land.
-     *  @dev This function has a protection mechanism built in to prevent duplicate registration of the 
-     *  same parcel of land. If an attempt is made to register a parcel that has already been registered, 
-     *  the function will throw an exception and halt execution.
-     *  @param _location A string containing the geographical location of the land parcel. 
-     *  This could be a description of the land's physical location, coordinates, or any other 
-     *  identifying characteristic.
-     *  @param _parcelID A unique identifier for the parcel of land. This ID is used to track the ownership 
-     *  and other properties of the land within the contract.
-     *  @param _price A uint256 that represents the price of the land in the smallest unit of the 
-     *  currency used (such as wei for Ether). This price is set by the current owner of the land and 
-     *  could be used in future land sale transactions.
+     *  @notice This function allows an Ethereum address to register a new
+     *  parcel of land in the contract. The parcel's location, unique
+     *  parcel ID, and price are all required to perform this operation. 
+     *  Once the land is successfully registered, a LandRegistered event will
+     *  be emitted, notifying all contract participants of the newly
+     *  registered land.
+     *  @dev This function has a protection mechanism built in to prevent
+     *  duplicate registration of the same parcel of land. If an attempt is
+     *  made to register a parcel that has already been registered, the
+     *  function will throw an exception and halt execution.
+     *  @param _location A string containing the geographical location of the
+     *  land parcel. This could be a description of the land's physical
+     *  location, coordinates, or any other identifying characteristic.
+     *  @param _parcelID A unique identifier for the parcel of land. This ID
+     *  is used to track the ownership and other properties of the land within
+     *  the contract.
+     *  @param _price A uint256 that represents the price of the land in the
+     *  smallest unit of the currency used (such as wei for Ether). This price
+     *  is set by the current owner of the land and could be used in future
+     *  land sale transactions.
      */
     function registerLand(
         string memory _location,
         string memory _parcelID,
         uint256 _price
     ) public {
+
         // Check if the land parcel is already registered
         require(
             lands[_parcelID].owner == address(0),
@@ -178,7 +188,6 @@ contract LandRegistry {
             _parcelID,
             _price
         );
-
 
         // Add the parcelID to the list of lands owned by the sender
         ownerToLands[msg.sender].push(_parcelID);
@@ -253,10 +262,11 @@ contract LandRegistry {
 
     /**
      *  verifyLand
-     *  @notice This function allows anyone to verify the details of a specific parcel 
-     *  of land. It fetches the ownership details, location, parcel ID, and price for the 
-     *  given parcel ID from the contract's storage and returns it to the caller. If no 
-     *  such parcel ID exists in the contract's storage, it will throw an exception and halt execution.
+     *  @notice This function allows anyone to verify the details of a specific
+     *  parcel of land. It fetches the ownership details, location, parcel ID,
+     *  and price for the given parcel ID from the contract's storage and
+     *  returns it to the caller. If no such parcel ID exists in the contract's
+     *  storage, it will throw an exception and halt execution.
      *  @dev The function is read-only and does not modify the state of the contract. 
      *  @param _parcelID A unique identifier for the parcel of land. This ID is used to 
      *  find the land parcel within the contract's storage and return its details.
