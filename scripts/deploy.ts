@@ -19,18 +19,23 @@
 /**
  * @file Deploy Script for LandRegistry Contract
  * 
- * This script deploys the LandRegistry contract to the configured Ethereum network using Hardhat and ethers.js.
+ * This script deploys the LandRegistry contract to the configured Ethereum
+ * network using Hardhat and ethers.js.
  *
- * Before running the script, make sure you have correctly configured your Hardhat network settings, 
- * and the contract has been compiled with the `npx hardhat compile` command.
+ * Before running the script, make sure you have correctly configured your
+ * Hardhat network settings, and the contract has been compiled with
+ * the `npx hardhat compile` command.
  *
- * After deployment, the script logs the address at which the contract is deployed.
+ * After deployment, the script logs the address at which the contract
+ * is deployed.
  *
  * @requires hardhat
  * @requires ethers
  */
 
+
  import { ethers, upgrades } from "hardhat";
+
 
  /**
   * @main
@@ -44,28 +49,33 @@
   * @returns {Promise<void>} No return value
   */
  async function main() {
-   const LandRegistry = await ethers.getContractFactory("LandRegistry");
-   
-   // In case of upgradable contracts, use the following line instead
-   // const instance = await upgrades.deployProxy(LandRegistry, ["arg1", "arg2"]);
-   
-   const instance = await LandRegistry.deploy();
-   
-   await instance.deployed();
-   
-   console.log("LandRegistry deployed to:", instance.address);
- }
- 
- /**
-  * @callback main
-  *
-  * Calls the main function and handles any errors. If successful, exits with status 0. 
-  * If an error occurs, logs the error and exits with status 1.
-  */
- main()
-   .then(() => process.exit(0))
-   .catch((error) => {
-     console.error(error);
-     process.exit(1);
-   });
- 
+
+    const LandRegistry = await ethers.getContractFactory("LandRegistry");
+    
+    // In case of upgradable contracts, use the following line instead
+    // const instance = await upgrades.deployProxy(LandRegistry, ["arg1", "arg2"]);
+    
+    const instance = await LandRegistry.deploy();
+    
+    await instance.deployed();
+    
+    console.log("LandRegistry deployed to:", instance.address);
+
+}
+
+
+/**
+ * @callback main
+ *
+ * Calls the main function and handles any errors.
+ * If successful, exits with status 0. 
+ * If an error occurs, logs the error and exits with status 1.
+ */
+main()
+.then(() => process.exit(0))
+.catch(
+    (error) => {
+        console.error(error);
+        process.exit(1);
+    }
+);
