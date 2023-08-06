@@ -1,7 +1,11 @@
-name: 🐞 Bug or error report
+name: Bug or error report
 description: Report an anomaly or unexpected behavior with a feature from this repository.
 labels: ['Needs: Triage :mag:', 'type:bug-suspected']
 
+- type: markdown
+  attributes:
+    value: "## Description of the bug"
+    
 body:
 - type: markdown
   attributes:
@@ -11,7 +15,7 @@ body:
       Thank you for reporting a bug! Use the sections below to submit a bug **only** if it's related to features in this repo.
 
       - All bug reports are welcome - we want to fix them!
-      - This repo is maintained by volunteers. Please be courteous and patient. 🙂
+      - This repo is maintained by volunteers. Please be courteous and patient.
       - Remember to include sufficient details and context.
       - If you have multiple questions, suggestions, or bugs, please submit them in separate issues.
       - We accept pull requests. If you know how to fix it - go ahead!
@@ -83,3 +87,38 @@ body:
     placeholder: Tell us what you expected to see!
   validations:
     required: true
+
+
+
+
+
+body:
+- type: markdown
+  attributes:
+    value: "## Description of the bug"
+
+- type: textarea
+  attributes:
+    label: Expected behavior
+    description: A clear and concise description of what you expected to happen.
+    placeholder: When I do '...', I expect '...'
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Current behavior
+    description: A clear and concise description of what actually happens.
+    placeholder: When I do '...', what actually happens is '...'
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: Steps to reproduce the behavior.
+    placeholder: '1. Go to '...''
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Additional context
+    description: Any additional context or screenshots that might help us understand the issue better.
