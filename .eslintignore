@@ -1,3 +1,51 @@
-dist
+# .eslintignore
+
+# Ignore node modules
 node_modules
+
+# Ignore build folder
+build
+
+# Ignore dist folder
+dist
+
+# Ignore documentation
+docs
+
+# Ignore public folder
+public
+
+# Ignore the Hardhat cache directory
+cache
+
+# Ignore coverage folder
 coverage
+
+# Ignore any log files
+*.log
+
+# Ignore TypeScript definition files
+*.d.ts
+
+# Ignore JSON files
+*.json
+
+# Ignore Yarn lock files
+yarn.lock
+
+# Ignore any markdown files
+*.md
+
+# Ignore any configuration files
+*.config.js
+
+# Ignore all test files
+**/__tests__/*
+**/*.test.ts
+
+# Ignore any environment variable files
+.env
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
