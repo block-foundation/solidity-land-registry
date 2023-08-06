@@ -1,0 +1,38 @@
+# This is a GitHub Actions Workflow file
+# GitHub Actions is a CI/CD infrastructure provided by GitHub 
+# For more information, visit: https://github.com/features/actions
+# This particular workflow is meant to automate the testing of our Solidity contract every time we push or create a pull request.
+
+name: Test Solidity Contract
+
+on: [push, pull_request] # This workflow gets triggered on every push and pull request event in the repository
+
+jobs: 
+  test: # Job ID
+    runs-on: ubuntu-latest # The type of machine to run the job on
+
+    steps: # Steps represent a sequence of tasks that will be executed as part of the job
+    - name: Checkout code # This step checks out a copy of your repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js # This step sets up a Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Define the version of Node.js to use
+
+    - name: Cache dependencies # This step caches the npm dependencies to speed up future workflows
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm # Defines the path of the cache
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }} # The key is what identifies the cache
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies # This step installs all necessary dependencies
+      run: npm install
+
+    - name: Compile contract # This step compiles the Solidity contract
+      run: npx hardhat compile
+
+    - name: Run tests # This step runs the tests defined in the repository
+      run: npx hardhat test
