@@ -1,2 +1,36 @@
+# .soliumignore
+
+# Ignore node modules
+node_modules
 node_modules/*
+
+# Ignore build folder
+build
+
+# Ignore dist folder
+dist
+
+# Ignore the Hardhat cache directory
+cache
+
+# Ignore all test files
+test
+
+# Ignore migrations
+migrations
 contracts/Migrations.sol
+
+# Ignore scripts folder
+scripts
+
+# Ignore any environment variable files
+.env
+
+# Ignore vendor related solidity files
+vendor/**/*.sol
+
+# Ignore all JSON files
+**/*.json
+
+# Ignore all Markdown files
+**/*.md
