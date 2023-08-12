@@ -1,57 +1,59 @@
 {
-  "name": "solidity-land-registry",
-  "description": "Decentralized Land Registry",
-  "author": "Stichting Block Foundation",
-  "version": "0.0.1",
-  "license": "Apache-2.0",
-  "keywords": [
-    "blockfoundation",
-    "blockchain",
-    "architecture"
-  ],
-  "homepage": "https://github.com/block-foundation/solidity-land-registry#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/block-foundation/solidity-land-registry.git"
-  },
-  "bugs": {
-    "url": "https://github.com/block-foundation/solidity-land-registry/issues"
-  },
-  "main": "index.ts",
-  "scripts": {
-    "test": "npx hardhat test",
-    "compile": "npx hardhat compile",
-    "deploy-rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby",
-    "deploy-mainnet": "npx hardhat run scripts/deploy.ts --network mainnet"
-  },
-  "devDependencies": {
-    "@nomicfoundation/hardhat-chai-matchers": "^2.0.1",
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "@openzeppelin/hardhat-upgrades": "^2.0.1",
-    "@typechain/ethers-v6": "^0.4.3",
-    "@types/chai": "^4.3.5",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^20.4.4",
-    "chai": "^4.3.7",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.41.0",
-    "ethers": "^6.6.5",
-    "hardhat": "^2.17.0",
-    "prettier": "^2.8.8",
-    "solhint": "^3.4.1",
-    "solidity-coverage": "^0.8.4",
-    "ts-node": "^10.9.1",
-    "typechain": "^8.3.1",
-    "typescript": "^5.1.6",
-    "web3": "^4.0.3",
-    "webpack": "^5.88.2"
-  },
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.9.2",
-    "@openzeppelin/contracts-upgradeable": "^4.9.2",
-    "hardhat-abi-exporter": "^2.10.1",
-    "keccak256": "^1.0.6",
-    "merkletreejs": "^0.3.10",
-    "web3-utils": "^4.0.3"
-  }
+    "name": "solidity-land-registry",
+    "description": "Decentralized Land Registry",
+    "author": "Stichting Block Foundation",
+    "version": "0.0.1",
+    "license": "Apache-2.0",
+    "keywords": [
+        "blockfoundation",
+        "blockchain",
+        "architecture"
+    ],
+    "homepage": "https://github.com/block-foundation/solidity-land-registry#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/block-foundation/solidity-land-registry.git"
+    },
+    "bugs": {
+        "url": "https://github.com/block-foundation/solidity-land-registry/issues"
+    },
+    "main": "index.ts",
+    "scripts": {
+        "test": "npx hardhat test",
+        "compile": "npx hardhat compile",
+        "deploy-rinkeby": "npx hardhat run scripts/deploy.ts --network rinkeby",
+        "deploy-mainnet": "npx hardhat run scripts/deploy.ts --network mainnet"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-chai-matchers": "^2.0.1",
+        "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+        "@openzeppelin/hardhat-upgrades": "^2.0.1",
+        "@typechain/ethers-v6": "^0.4.3",
+        "@types/chai": "^4.3.5",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^20.4.4",
+        "chai": "^4.3.7",
+        "dotenv": "^16.3.1",
+        "eslint": "^8.41.0",
+        "ethereum-waffle": "^4.0.10",
+        "ethers": "^6.6.5",
+        "hardhat": "^2.17.0",
+        "prettier": "^2.8.8",
+        "solhint": "^3.4.1",
+        "solidity-coverage": "^0.8.4",
+        "ts-node": "^10.9.1",
+        "typechain": "^8.3.1",
+        "typescript": "^5.1.6",
+        "web3": "^4.0.3",
+        "webpack": "^5.88.2"
+    },
+    "dependencies": {
+        "@chainlink/contracts": "^0.6.1",
+        "@openzeppelin/contracts": "^4.9.2",
+        "@openzeppelin/contracts-upgradeable": "^4.9.2",
+        "hardhat-abi-exporter": "^2.10.1",
+        "keccak256": "^1.0.6",
+        "merkletreejs": "^0.3.10",
+        "web3-utils": "^4.0.3"
+    }
 }
