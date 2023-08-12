@@ -36,7 +36,7 @@
 
 </div>
 
-**Welcome to Block Foundation's Decentralized Land Registry project - an ambitious venture into the field of blockchain applications. This project is a part of our Smart Contract Series and leverages the full potential of Solidity, Ethereum's native programming language, to deliver a secure and transparent system for land transactions.**
+**Welcome to Block Foundation's Decentralized Land Registry project as part of our Smart Contract Series. It leverages the full potential of smart contracts to deliver a secure and transparent system for land transactions.**
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Land registries have long been known for their lack of transparency and the pote
 
 With our smart contract for the land registry system, an owner can register their land, update the land details, and even transfer ownership in a seamless and secure manner. Not only does this bring about a new level of trust and reliability to land transactions, but it also significantly reduces the potential for fraudulent activities.
 
-This is an example of  a smart contract for a land registry system where an owner can register their land, update the land details, and even transfer ownership in a secure way. This contract makes land transactions more transparent and trustworthy.
+This smart contract for a land registry system in which land transactions are more transparent and trustworthy, and allows an owner to register their land, update the land details, and  transfer ownership in a secure way.
 
 The primary functionalities include:
 
