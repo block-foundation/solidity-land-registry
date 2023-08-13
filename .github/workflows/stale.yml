@@ -1,3 +1,7 @@
+
+
+---
+
 name: Check stale issues and pull requests
 
 on:
