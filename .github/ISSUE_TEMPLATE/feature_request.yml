@@ -1,9 +1,28 @@
-name: "Feature Request"
+
+---
+
+# =============================================================================
+# Header
+# =============================================================================
+
+name: Feature Request
 description: Request a new feature from the community
+# title: "[FEATURE]: "
 labels: ['Needs: Triage :mag:', 'type:feature-request', 'Help wanted']
+# assignees: []
+
+
+# =============================================================================
+# Body
+# =============================================================================
 
 body:
-- type: markdown
+
+# Introduction
+# =============================================================================
+
+- 
+  type: markdown
   attributes:
     value: |
 
@@ -16,7 +35,12 @@ body:
       - If you have multiple requests submit them separately so we can track resolution.
       - We accept pull requests. If you know how to make it - go ahead!
 
-- type: textarea
+
+# Details
+# =============================================================================
+
+- 
+  type: textarea
   id: description
   attributes:
     label: Sample description
@@ -24,6 +48,10 @@ body:
     placeholder: Tell us what you want, what you really, really want.
   validations:
     required: true
+
+
+# Contribute
+# =============================================================================
 
 - type: dropdown
   id: willing-to-help
