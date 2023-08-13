@@ -1,9 +1,28 @@
+
+---
+
+# =============================================================================
+# Header
+# =============================================================================
+
 name: Suggestion
 description: Suggest an enhancement to make one of our features even better
+# title: "[SUGGESTION]: "
 labels: ['Needs: Triage :mag:', 'type:enhancement']
+# assignees: []
+
+
+# =============================================================================
+# Body
+# =============================================================================
 
 body:
-- type: markdown
+
+# Introduction
+# =============================================================================
+
+- 
+  type: markdown
   attributes:
     value: |
 
@@ -16,7 +35,12 @@ body:
       - If you have multiple suggestions please submit them separately so we can track resolution.
       - Screenshots are always helpful (just paste any images right here in the suggestion)
 
-- type: input
+
+# Details
+# =============================================================================
+
+- 
+  type: input
   id: feature
   validations:
     required: true
