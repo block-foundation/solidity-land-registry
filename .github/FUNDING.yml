@@ -1,2 +1,81 @@
+
+---
+
+# FUNDING.yml
+# This file configures the "Sponsor" button in your repository to help support
+# the developers and maintainers. 
+# These are supported funding model platforms
+
+
+# GitHub Sponsors
+# =============================================================================
+# Directly within GitHub, users can provide financial support to their favorite
+# developers. 
+# Ideal for those heavily involved in the GitHub open-source ecosystem.
 github: block-foundation
+
+
+# Open Collective
+# =============================================================================
+# Perfect for open-source projects with transparent finances. Supporters can see
+# where every dollar goes.
 open_collective: block
+
+
+# Patreon
+# =============================================================================
+# A popular platform where creators receive financial support directly from
+# their fans on a recurring basis.
+# Share exclusive content, updates, and more with your sponsors.
+# patreon: blockfoundation
+
+
+# Ko-fi
+# =============================================================================
+# Let your supporters buy you a coffee! A simple, fun, and effective way to get
+# small amounts of support.
+# ko_fi: blockfoundation
+
+
+# Tidelift
+# =============================================================================
+# Aligns open source software maintainers with users in a model where everyone
+# wins. Especially suitable for libraries or larger open-source projects.
+# tidelift: your_tidelift_marketplace_url
+
+
+# Community Bridge
+# =============================================================================
+# Helps sustain open-source communities by providing both funding and spending
+# transparency.
+# community_bridge: your_community_bridge_name
+
+
+# Liberapay
+# =============================================================================
+# European-based platform for recurring donations, emphasizing anonymity and
+# low fees.
+# liberapay: your_liberapay_username
+
+
+# IssueHunt
+# =============================================================================
+# Crowdfund GitHub issues, allowing contributors to earn money for resolving
+# them.
+# issuehunt: your_issuehunt_username
+
+
+# Otechie
+# =============================================================================
+# Ideal for consultants and freelancers in the tech industry. Set up a profile
+# and let sponsors hire or consult with you.
+# otechie: your_otechie_username
+
+
+# Custom Funding Methods
+# =============================================================================
+# Maybe you have a personal webpage, a BuyMeACoffee link, or another unique
+# platform to receive support. Add those links here.
+# custom: 
+#   - 'http://your_own_funding_platform.com'
+#   - 'https://another_custom_platform.com'
