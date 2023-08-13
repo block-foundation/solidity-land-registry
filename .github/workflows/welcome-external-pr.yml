@@ -1,3 +1,6 @@
+
+---
+
 name: External contributor greeter
 
 on:
@@ -12,9 +15,12 @@ jobs:
   comment-external-pr:
     runs-on: ubuntu-latest
     steps:
-      # Note: this step requires that the INTERNAL_CONTRIBUTORS environment variable
-      # is already defined in the repository with the current json list of internal contributors.
-      - name: Comment on external contribution PR
+
+      # Note: this step requires that the INTERNAL_CONTRIBUTORS environment
+      # variable is already defined in the repository with the current json list
+      # of internal contributors.
+      - 
+        name: Comment on external contribution PR
         if: "!contains(fromJSON(vars.INTERNAL_CONTRIBUTORS), github.event.pull_request.user.login)"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
