@@ -1,6 +1,6 @@
-name: "\U0001F9EA Feature request"
+name: "Feature Request"
 description: Request a new feature from the community
-labels: ['Needs: Triage :mag:', 'type:feature-request', 'Help wanted 🪧']
+labels: ['Needs: Triage :mag:', 'type:feature-request', 'Help wanted']
 
 body:
 - type: markdown
@@ -11,7 +11,7 @@ body:
 
       - Requests that do not follow the below template will automatically be closed
       - All requests are welcome - the more the merrier!
-      - This repo is maintained by volunteers. Please be courteous and patient. 🙂
+      - This repo is maintained by volunteers. Please be courteous and patient.
       - Remember to include sufficient details and context.
       - If you have multiple requests submit them separately so we can track resolution.
       - We accept pull requests. If you know how to make it - go ahead!
