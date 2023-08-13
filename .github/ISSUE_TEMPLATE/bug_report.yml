@@ -1,6 +1,7 @@
 
 ---
 
+# =============================================================================
 # Header
 # =============================================================================
 
@@ -11,6 +12,7 @@ labels: ["Bug", "Needs Triage"]
 assignees: []
 
 
+# =============================================================================
 # Body
 # =============================================================================
 
@@ -32,7 +34,6 @@ body:
       - Kindly remember, this repository is managed by dedicated volunteers. We ask for your understanding and patience.
       - For clarity and ease of tracking, if you have multiple queries, suggestions, or issues, kindly create separate submissions for each.
       - Familiar with a solution? We're open to pull requests. Feel free to contribute!
-
 
 
 # Details
