@@ -1,5 +1,85 @@
+
+---
+
+# Users must select a template when creating an issue.
 blank_issues_enabled: false
+
+# Customized feedback for when users try to open a blank issue.
+blank_issue_message: "To maintain consistency and clarity, please use one of the provided templates."
+
+
+# Links
+# =============================================================================
+
 contact_links:
-  - name: Start a discussion
-    about: 🗨 Start a friendly conversation with the other members of the community about the samples in this repository.
-    url: https://github.com/scape-foundation/earth-txt/discussions
+
+  - 
+    name: Start a discussion
+    about: Start a friendly conversation with the other members of the community about the samples in this repository.
+    url: https://github.com/block-foundation/solidity-land-registry/discussions
+
+  # -
+  #   name: Community Forum
+  #   url: https://forum.blockfoundation.io
+  #   about: Our community forum is a bustling space filled with rich discussions, tips, and solutions. Engage with peers and maintainers here.
+
+  - 
+    name: Documentation
+    url: https://docs.blockfoundation.io
+    about: Familiarize yourself with our detailed documentation. It's a treasure trove of guidance, best practices, and updates.
+
+  # - 
+  #   name: Discord Chat
+  #   url: https://discord.blockfoundation.io
+  #   about: Want a more interactive space? Join our Discord for live chats, announcements, and special community events.
+
+  # - 
+  #   name: FAQ
+  #   url: https://faq.blockfoundation.io
+  #   about: Quick questions often have quick answers. Our FAQ might already have what you're looking for.
+
+  # - 
+  #   name: Contribution Guidelines
+  #   url: https://github.com/yourproject/CONTRIBUTING.md
+  #   about: Contribute to our mission! Understand our guidelines to ensure smooth collaboration.
+
+  # - 
+  #   name: Roadmap & Features
+  #   url: https://github.com/yourproject/ROADMAP.md
+  #   about: See where we're headed. Explore our roadmap and upcoming features to get a glimpse of our vision.
+
+  # - 
+  #   name: Security Concerns
+  #   url: https://security.blockfoundation.io
+  #   about: Found a potential security vulnerability? Please follow our security policy for responsible disclosure.
+
+
+# Tips
+# =============================================================================
+
+tips:
+
+  -
+    title: Collaborative Spirit
+    content: Our community thrives on collaboration. Please engage constructively, and remember that behind every comment is a fellow human.
+
+  -
+    title: Check Existing Discussions
+    content: Duplicate issues can dilute discussions. Ensure you search existing issues and discussions before posting.
+
+  -
+    title: Be Descriptive
+    content: Clear descriptions and titles, along with reproducible steps or code samples, are invaluable. The more context, the better.
+
+  -
+    title: Use Labels Appropriately
+    content: If our repository supports labels, use them wisely. They help categorize and prioritize issues.
+
+  -
+    title: Updates & Versions
+    content: Specify which version of our software you're using. Always good to check if the issue persists in the latest version.
+
+  -
+    title: Respect Timelines
+    content: Remember, this project is often run by volunteers with commitments outside of this platform. Responses might take time, but they'll come!
+
