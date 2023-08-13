@@ -2,109 +2,98 @@
 
 _Last updated on: 2023-01-01_
 
-
-
-**This following Security Policy outlines security procedures and general 
-policies we take to ensure the safety and security of the Open Source projects 
-of the Block Foundation, as found on our GitHub repositories at: 
-[https://github.com/block-foundation](https://github.com/block-foundation).**
-
+**This following Security Policy outlines security procedures and general policies we take to ensure the safety and security of the Open Source projects of the Block Foundation, as found on our GitHub repositories at: [https://github.com/block-foundation](https://github.com/block-foundation).**
 
 ---
 
-**Table of Contents**
+## Table of Contents
 
-  * [Security Contact](#security-contact)
-  * [Security Conventions](#security-conventions)
-  * [Vulnerability Reporting](#vulnerability-reporting)
-  * [Public Disclosure Process](#public-disclosure-process)
-  * [Patch and Release Process ](#patch-and-release-process-process)
+- [Security Contact](#security-contact)
+- [Security Conventions](#security-conventions)
+- [Vulnerability Reporting](#vulnerability-reporting)
+- [Public Disclosure Process](#public-disclosure-process)
+- [Patch and Release Process](#patch-and-release-process)
 
 ---
-
 
 ## Security Contact
- 
+
 If you have any questions or concerns, please contact us at:
 **[security@blockfoundation.io](mailto:security@blockfoundation.io)**.
 
-```
+``` txt
 security@blockfoundation.io
 ```
 
 ## Security Conventions
 
-We take security seriously and are committed to protecting our users and follow 
+We take security seriously and are committed to protecting our users and follow
 the following conventions:
 
-1. **Access Control** \
-Access to our repository is restricted to authorized individuals and teams. 
-Passwords are required for all accounts and are regularly rotated. 
+1. _Access Control_ \
+Access to our repository is restricted to authorized individuals and teams.
+Passwords are required for all accounts and are regularly rotated.
 Where possible, Two-factor Authentication is also required for all accounts.
 
-2. **Vulnerability Reporting** \
+2. _Vulnerability Reporting_ \
 We have a vulnerability reporting procedure in place, please see the:
 ['Vulnerability Reporting'](#vulnerability-reporting) section in this document.
 
-3. **Third-Party Code** \
-We take care to use only reputable third-party libraries and frameworks, 
-and keep them updated to the latest version. Any vulnerabilities in 
+3. _Third-Party Code_ \
+We take care to use only reputable third-party libraries and frameworks,
+and keep them updated to the latest version. Any vulnerabilities in
 third-party code will be addressed as soon as possible.
 
-4. **Encryption** \
-All sensitive data and communications are encrypted whenever and whereever 
+4. _Encryption_ \
+All sensitive data and communications are encrypted whenever and whereever
 possible.
 
-5. **Backups** \
-Regular backups of important data are taken to ensure it can be recovered in 
+5. _Backups_ \
+Regular backups of important data are taken to ensure it can be recovered in
 case of a security incident.
 
-6. **Auditing** \
-We regularly audit our repository for potential security issues using code 
+6. _Auditing_ \
+We regularly audit our repository for potential security issues using code
 scanning tools.
 
-7. **Response Plan** \
-We have a plan in place for responding to security incidents, including how 
+7. _Response Plan_ \
+We have a plan in place for responding to security incidents, including how
 to contain, eradicate, and recover from a security incident.
-
 
 ## Vulnerability Reporting
 
-Security is of the highest importance and yhe the Block Foundation team takes all 
-security vulnerabilities very seriously. 
-If you discover a potential security vulnerability in our code, please report 
+Security is of the highest importance and yhe the Block Foundation team takes all
+security vulnerabilities very seriously.
+If you discover a potential security vulnerability in our code, please report
 it to us privately, to minimize negative implications before it has been fixed.
 
-
-Please report (suspected) security vulnerabilities with its details, by 
+Please report (suspected) security vulnerabilities with its details, by
 emailing our Security Team at:
-**[security@blockfoundation.io](mailto:security@blockfoundation.io)**. 
-
+**[security@blockfoundation.io](mailto:security@blockfoundation.io)**.
 
 > **IMPORTANT: Do not file public issues on GitHub for security vulnerabilities**
-
-
+>
 > **When to report a vulnerability**
-> - When you think the open source software has a potential security 
+>
+> - When you think the open source software has a potential security
 vulnerability.
 > - When you suspect a potential vulnerability but you are unsure of it impacts.
-> - When you know of or suspect a potential vulnerability on another project 
-that is used within this project. 
-
-
-> **Proposed Email Content** \
-> Provide a descriptive subject line and in the body of the email include the 
+> - When you know of or suspect a potential vulnerability on another project
+that is used within this project.
+>
+> *_Proposed Email Content_- \
+> Provide a descriptive subject line and in the body of the email include the
 > following information:
+>
 > - Basic identity information, such as your name and your affiliation or company.
-> - Detailed steps to reproduce the vulnerability (POC scripts, screenshots, 
+> - Detailed steps to reproduce the vulnerability (POC scripts, screenshots,
 and compressed packet captures are all helpful to us).
-> - Description of the effects of the vulnerability and the related hardware 
+> - Description of the effects of the vulnerability and the related hardware
 and software configurations, so that the Security Team can reproduce it.
-> - How the vulnerability affects Harbor usage and an estimation of the attack 
+> - How the vulnerability affects Harbor usage and an estimation of the attack
 surface, if there is one.
-> - List other projects or dependencies that were used in conjunction in order 
+> - List other projects or dependencies that were used in conjunction in order
 to produce the vulnerability.
-
 
 ## Public Disclosure Process
 
