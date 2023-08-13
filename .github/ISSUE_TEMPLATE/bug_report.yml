@@ -1,18 +1,24 @@
-name: Bug or error report
-description: Report an anomaly or unexpected behavior with a feature from this repository.
-labels: ['Needs: Triage :mag:', 'type:bug-suspected']
 
-- type: markdown
-  attributes:
-    value: "## Description of the bug"
-    
+---
+
+name: Bug Report
+description: File a bug report to help us improve.
+title: "[BUG]: "
+labels: ["Bug", "Needs Triage"]
+assignees: []
+
 body:
-- type: markdown
+
+- 
+  type: markdown
   attributes:
     value: |
+      ## Bug Report
       - [x] Bug
 
-      Thank you for reporting a bug! Use the sections below to submit a bug **only** if it's related to features in this repo.
+      Thank you for taking the time to report a bug!
+      To help us understand and address the issue promptly, please provide as much detail as possible.      
+      Use the sections below to submit a bug **only** if it's related to features in this repo.
 
       - All bug reports are welcome - we want to fix them!
       - This repo is maintained by volunteers. Please be courteous and patient.
@@ -20,10 +26,43 @@ body:
       - If you have multiple questions, suggestions, or bugs, please submit them in separate issues.
       - We accept pull requests. If you know how to fix it - go ahead!
 
+- 
+  type: checkboxes
+  id: exists
+  attributes:
+    label: Is there an existing issue for this?
+    description: |
+      Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+  
+- 
+  type: input
+  id: operating-system
+  attributes:
+    label: Operating System
+    description: |
+      What operating system are you using?
+    placeholder: |
+      e.g. Windows 10, macOS Big Sur
+  validations:
+    required: true
 
-      Please provide the following details about the issue you encountered.  *Issues that do not provide the information requested in this form will be flagged as **incomplete** & automatically closed.*
+- 
+  type: input
+  id: software-version
+  attributes:
+    label: Software Version
+    description: |
+      What version of the software are you using?
+    placeholder: |
+      e.g. 1.0.0
+  validations:
+    required: true
 
-- type: input
+- 
+  type: input
   id: feature
   validations:
     required: true
@@ -34,91 +73,90 @@ body:
 
         Use the feature name or URL. We don't want to be spend all this time diagnosing issues about the wrong feature, do we?
 
-- type: input
-  id: authors
-  validations:
-    required: true
+- 
+  type: textarea
+  id: steps-to-reproduce
   attributes:
-    label: Author(s)
+    label: Steps to reproduce
     description: |
-        Who wrote the feature?
-
-        Because of the way this repository is configured, features authors do not get a notification when you create an issue.
-
-        For the section above **@mention any author of the feature**. Authors' GitHub handle can be found on the main feature documentation page, under the "Solution" section.
-
-        Issues without an @mention will be closed automatically, as authors won't get notified.
-
-        **NOTE:** Don't @mention the repo maintainers, they already get notified.
-
-- type: markdown
-  attributes:
-    value: |
-      Provide a clear & concise description of what the bug is.
-
-      **Do not attach ZIP files** of your code or compiled projects - instead, please publish your code to a public GitHub repo & post a link to it.
-
-- type: textarea
-  id: what-happened
-  attributes:
-    label: What happened?
-    description: Describe the observed behavior
-    placeholder: Tell us what you see!
+      How do you reproduce this? Please provide as much step-by-step detail as possible.
+    placeholder: |
+      1. In this environment...
+      1. With this config...
+      1. Run '...'
+      1. See error...
   validations:
     required: true
 
-- type: textarea
-  id: steps
-  attributes:
-    label: Steps to reproduce
-    description: How do you reproduce this? Please provide as much step-by-step detail as possible.
-    value: |
-      1.
-      2.
-      3.
-  validations:
-    required: true
-
-- type: textarea
-  id: expected
+- 
+  type: textarea
+  id: expected-behavior
   attributes:
     label: Expected behavior
-    description: What did you expect to happen when the reproduce steps are followed?
-    placeholder: Tell us what you expected to see!
+    description: |
+      A clear and concise description of what you expected to happen.
+    placeholder: |
+      When I do '...', I expect '...'
   validations:
     required: true
 
-
-
-
-
-body:
-- type: markdown
+- 
+  type: textarea
+  id: actual-behavior
   attributes:
-    value: "## Description of the bug"
-
-- type: textarea
-  attributes:
-    label: Expected behavior
-    description: A clear and concise description of what you expected to happen.
-    placeholder: When I do '...', I expect '...'
+    label: Actual behavior
+    description: |
+      A clear and concise description of what actually happens.
+    placeholder: |
+      When I do '...', what actually happens is '...'
   validations:
     required: true
-- type: textarea
+
+- 
+  type: textarea
+  id: logs
   attributes:
-    label: Current behavior
-    description: A clear and concise description of what actually happens.
-    placeholder: When I do '...', what actually happens is '...'
+    label: Logs or Error Messages
+    description: |
+       If possible, include any logs or error messages related to the bug.
+    placeholder: |
+      "Paste the logs or error messages here"
   validations:
-    required: true
-- type: textarea
+    required: false
+
+- 
+  type: input
+  id: hardware-specs
   attributes:
-    label: Steps to reproduce
-    description: Steps to reproduce the behavior.
-    placeholder: '1. Go to '...''
+    label: Hardware Specifications
+    description: |
+      Please mention any relevant hardware details, such as CPU, GPU, RAM, etc.
+    placeholder: |
+      e.g. Intel i5, 8GB RAM, Nvidia GTX 1060
   validations:
-    required: true
-- type: textarea
+    required: false
+
+- 
+  type: dropdown
+  id: frequency
+  attributes:
+    label: How often does the issue occur?
+    description: |
+      How frequently do you encounter this issue?
+    options:
+      - Every time
+      - Occasionally
+      - Rarely
+      - Just once
+  validations:
+    required: false
+
+- 
+  type: textarea
+  id: additional-context
   attributes:
     label: Additional context
-    description: Any additional context or screenshots that might help us understand the issue better.
+    description: |
+      Add any other context, screenshots, or relevant information about the bug here.
+
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
