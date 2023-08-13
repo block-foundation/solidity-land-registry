@@ -36,30 +36,7 @@ body:
     options:
     - label: I have searched the existing issues
       required: true
-  
-- 
-  type: input
-  id: operating-system
-  attributes:
-    label: Operating System
-    description: |
-      What operating system are you using?
-    placeholder: |
-      e.g. Windows 10, macOS Big Sur
-  validations:
-    required: true
 
-- 
-  type: input
-  id: software-version
-  attributes:
-    label: Software Version
-    description: |
-      What version of the software are you using?
-    placeholder: |
-      e.g. 1.0.0
-  validations:
-    required: true
 
 - 
   type: input
@@ -125,18 +102,6 @@ body:
     required: false
 
 - 
-  type: input
-  id: hardware-specs
-  attributes:
-    label: Hardware Specifications
-    description: |
-      Please mention any relevant hardware details, such as CPU, GPU, RAM, etc.
-    placeholder: |
-      e.g. Intel i5, 8GB RAM, Nvidia GTX 1060
-  validations:
-    required: false
-
-- 
   type: dropdown
   id: frequency
   attributes:
@@ -160,3 +125,48 @@ body:
       Add any other context, screenshots, or relevant information about the bug here.
 
       Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+
+
+
+
+- 
+  type: markdown
+  attributes:
+    value: |
+      ### Environment
+
+- 
+  type: input
+  id: operating-system
+  attributes:
+    label: Operating System
+    description: |
+      What operating system are you using?
+    placeholder: |
+      e.g. Windows 10, macOS Big Sur
+  validations:
+    required: false
+
+- 
+  type: input
+  id: software-version
+  attributes:
+    label: Software Version
+    description: |
+      What version of the software are you using?
+    placeholder: |
+      e.g. 1.0.0
+  validations:
+    required: false
+
+- 
+  type: input
+  id: hardware-specs
+  attributes:
+    label: Hardware Specifications
+    description: |
+      Please mention any relevant hardware details, such as CPU, GPU, RAM, etc.
+    placeholder: |
+      e.g. Intel i5, 8GB RAM, Nvidia GTX 1060
+  validations:
+    required: false
