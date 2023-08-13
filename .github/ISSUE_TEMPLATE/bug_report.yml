@@ -26,7 +26,6 @@ body:
       ## Bug Report
 
       Thank you for taking the time to report a bug! We highly value all bug reports and strive to address them.
-
       We appreciate your effort in highlighting a potential bug! To expedite our response and ensure clarity:
 
       - Please furnish comprehensive details about the bug, focusing specifically on the features of this repository.
@@ -52,7 +51,6 @@ body:
     label: Existing Issues
     description: |
       Is there an existing issue for this?
-
       Please search to see if an issue already exists for the bug you encountered.
     options:
     - label: I have searched the existing issues
@@ -67,7 +65,6 @@ body:
     label: Sample
     description: |
         Which feature are you having troubles with?
-
         Use the feature name or URL. We don't want to be spend all this time diagnosing issues about the wrong feature, do we?
 
 
