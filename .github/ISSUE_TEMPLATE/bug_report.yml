@@ -133,9 +133,6 @@ body:
     required: false
 
 
-
-
-
 # Environment
 # =============================================================================
 
@@ -206,6 +203,7 @@ body:
       "Add context here"
   validations:
     required: false
+
 - 
   type: textarea
   id: logs
