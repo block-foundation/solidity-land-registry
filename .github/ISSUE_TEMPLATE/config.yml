@@ -15,18 +15,28 @@ contact_links:
 
   - 
     name: Start a discussion
-    about: Start a friendly conversation with the other members of the community about the samples in this repository.
     url: https://github.com/block-foundation/solidity-land-registry/discussions
+    about: Start a friendly conversation with the other members of the community about the samples in this repository.
 
-  # -
-  #   name: Community Forum
-  #   url: https://forum.blockfoundation.io
-  #   about: Our community forum is a bustling space filled with rich discussions, tips, and solutions. Engage with peers and maintainers here.
+  -
+    name: Website
+    url: https://www.blockfoundation.io
+    about: Visit our website for more information.
+
+  -
+    name: Forum
+    url: https://forum.blockfoundation.io
+    about: Our community forum is a bustling space filled with rich discussions, tips, and solutions. Engage with peers and maintainers here.
 
   - 
     name: Documentation
     url: https://docs.blockfoundation.io
     about: Familiarize yourself with our detailed documentation. It's a treasure trove of guidance, best practices, and updates.
+
+  -
+    name: Brand
+    url: https://github.com/block-foundation/brand
+    about: Visit our official brand repository.
 
   # - 
   #   name: Discord Chat
@@ -43,10 +53,10 @@ contact_links:
   #   url: https://github.com/yourproject/CONTRIBUTING.md
   #   about: Contribute to our mission! Understand our guidelines to ensure smooth collaboration.
 
-  # - 
-  #   name: Roadmap & Features
-  #   url: https://github.com/yourproject/ROADMAP.md
-  #   about: See where we're headed. Explore our roadmap and upcoming features to get a glimpse of our vision.
+  - 
+    name: Roadmap
+    url: https://github.com/block-foundation/roadmap
+    about: See where we're headed. Explore our roadmap and upcoming features to get a glimpse of our vision.
 
   # - 
   #   name: Security Concerns
