@@ -6,6 +6,7 @@ cff-version: 1.2.0
 
 
 
+# =============================================================================
 # General
 # =============================================================================
 
@@ -26,17 +27,11 @@ title: "LandRegistry: A Blockchain-based Land Registry System"
 # The author(s) of the software or dataset.
 # type: array
 authors:
-  - name: Block Foundation
-    email: info@blockfoundation.io
-    city: Amsterdam
-    country: The Netherlands
-    website: "https://www.blockfoundation.io"
-    # orcid: 
-  - given-names: Lars Bastiaan
+  - family-names: Vianen
     name-particle: van
-    family-names: Vianen
-    affiliation: Block Foundation
-    email: lars@blockfoundation.io
+    given-names: Lars Bastiaan
+    affiliation: Scape Agency
+    email: lars@vianen.com
     website: "https://www.vianen.com"
     alias: "@vanvianen"
     orcid: "https://orcid.org/0000-0002-8790-8630"
@@ -57,6 +52,12 @@ url: "https://github.com/block-foundation/solidity-land-registry"
 # The contact person, group, company, etc. for the software or dataset.
 # type: array
 contact: 
+  - name: Block Foundation
+    email: info@blockfoundation.io
+    city: Amsterdam
+    country: The Netherlands
+    website: "https://www.blockfoundation.io"
+    # orcid: 
 
 # Keywords that describe the work.
 # type: array
@@ -65,10 +66,13 @@ keywords:
   - Blockchain
   - Architecture
   - Real-Estate
-  - Smart Contract
+  - Smart-Contract
   - Ethereum
   - Solidity
   - Land Registry
+  - Land Registration
+  - Land Ownerschip
+  - Urban Planning
 
 
 # =============================================================================
@@ -99,7 +103,9 @@ repository-code: "https://github.com/block-foundation/solidity-land-registry"
 # Citation
 # =============================================================================
 
-#
+# The DOI of the work (i.e., 10.5281/zenodo.1003150,
+# not the resolver URL http://doi.org/10.5281/zenodo.1003150).",
+# type: string
 # doi: "10.5281/zenodo.XXXXXXX"
 
 # The identifiers of the software or dataset.
@@ -108,7 +114,78 @@ repository-code: "https://github.com/block-foundation/solidity-land-registry"
 
 # A reference to another work that should be cited instead of the software or
 # dataset itself.
-# preferred-citation: 
+preferred-citation:
+  # abbreviation: ""
+  # abstract: ""
+  # authors: ""
+  # collection-doi: ""
+  # collection-title: ""
+  # collection-type: ""
+  # commit: ""
+  # conference: ""
+  # contact: ""
+  copyright: "Copyright 2023 Stichting Block Foundation"
+  # data-type: ""
+  # database: ""
+  # database-provider: ""
+  # date-accessed: ""
+  # date-downloaded: ""
+  # date-published: ""
+  # date-released: ""
+  # department: ""
+  # doi: "10.5281/zenodo.XXXXXXX"
+  # edition: ""
+  # editors: ""
+  # editors-series: ""
+  # end: ""
+  # entry: ""
+  # filename: ""
+  # format: ""
+  # identifiers: ""
+  institution: "Block Foundation"
+  # isbn: ""
+  # issn: ""
+  # issue: ""
+  # issue-date: ""
+  # issue-title: ""
+  # journal: ""
+  # keywords: ""
+  # languages: "en"
+  # license: ""
+  # license-url: ""
+  # loc-end: ""
+  # loc-start: ""
+  # location: ""
+  # medium: ""
+  # month: ""
+  # nihmsid: ""
+  # notes: ""
+  # number: ""
+  # number-volumes: ""
+  # pages: ""
+  # patent-states: ""
+  # pmcid: ""
+  publisher: "Block Foundation"
+  # recipients: ""
+  # repository: ""
+  # repository-artifact: ""
+  # repository-code: ""
+  # scope: ""
+  # section: ""
+  # senders: ""
+  # start: ""
+  # status: ""
+  # term: ""
+  # thesis-type: ""
+  # title: ""
+  # translators: ""
+  type: "software-code"
+  # url: ""
+  # version: ""
+  # volume: ""
+  # volume-title: ""
+  # year: ""
+  # year-original: ""
 
 # Reference(s) to other creative works.
 # type: array
