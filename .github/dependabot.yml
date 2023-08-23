@@ -6,43 +6,46 @@ version: 2
 updates:
 
   # Maintain dependencies for GitHub Actions
-  - package-ecosystem: github-actions
-    directory: /
+  - 
+    package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: daily
       time: "09:00"
       timezone: "Europe/Amsterdam"
     target-branch: "main"
-    reviewers:
-      - "vianen"
+    commit-message:
+      prefix: "dependabot-github-actions"
+      include: "scope"
     labels:
       - "dependencies"
 
   # Maintain dependencies for Docker
-  - package-ecosystem: docker
-    directory: /.devcontainer
+  - 
+    package-ecosystem: "docker"
+    directory: "/.devcontainer"
     schedule:
       interval: daily
       time: "09:00"
       timezone: "Europe/Amsterdam"
     target-branch: "main"
-    reviewers:
-      - "vianen"
+    commit-message:
+      prefix: "dependabot-docker"
+      include: "scope"
     labels:
       - "dependencies"
 
   # Maintain dependencies for NPM
-  - package-ecosystem: "npm"
+  - 
+    package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
       time: "09:00"
       timezone: "Europe/Amsterdam"
     target-branch: "main"
-    open-pull-requests-limit: 10
-    reviewers:
-      - "vianen"
-    automerge: true
+    commit-message:
+      prefix: "dependabot-npm"
+      include: "scope"
     labels:
       - "dependencies"
-      - "automerge"
