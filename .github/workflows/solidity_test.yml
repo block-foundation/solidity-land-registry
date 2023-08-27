@@ -25,7 +25,7 @@ jobs:
         node-version: '14' # Define the version of Node.js to use
 
     - name: Cache dependencies # This step caches the npm dependencies to speed up future workflows
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ~/.npm # Defines the path of the cache
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }} # The key is what identifies the cache
