@@ -48,7 +48,7 @@
         "webpack": "^5.88.2"
     },
     "dependencies": {
-        "@chainlink/contracts": "^0.6.1",
+        "@chainlink/contracts": "^0.7.1",
         "@openzeppelin/contracts": "^4.9.2",
         "@openzeppelin/contracts-upgradeable": "^4.9.2",
         "hardhat-abi-exporter": "^2.10.1",
