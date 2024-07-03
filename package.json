@@ -53,7 +53,7 @@
         "@openzeppelin/contracts-upgradeable": "^5.0.0",
         "hardhat-abi-exporter": "^2.10.1",
         "keccak256": "^1.0.6",
-        "merkletreejs": "^0.3.10",
+        "merkletreejs": "^0.4.0",
         "web3-utils": "^4.0.3"
     }
 }
