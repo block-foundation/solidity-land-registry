@@ -1,16 +1,44 @@
 
 ---
 
+# =============================================================================
+# Dependabot Configuration
+# =============================================================================
+
 version: 2
 
 updates:
 
-  # Maintain dependencies for GitHub Actions
+  # Git Submodule dependencies
+  # ===========================================================================
+
+  - 
+    package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    target-branch: "main"
+    commit-message:
+      prefix: "dependabot-gitsubmodule"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "gitsubmodule"
+
+
+
+  # GitHub Actions dependencies
+  # ===========================================================================
+
   - 
     package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: daily
+      interval: "weekly"
+      day: "monday"
       time: "09:00"
       timezone: "Europe/Amsterdam"
     target-branch: "main"
@@ -19,33 +47,95 @@ updates:
       include: "scope"
     labels:
       - "dependencies"
+      - "github-actions"
 
-  # Maintain dependencies for Docker
+
+  # NPM dependencies
+  # ===========================================================================
+
+  - 
+    package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    target-branch: "main"
+    commit-message:
+      prefix: "npm"
+    labels:
+      - "dependencies"
+      - "npm"
+
+
+  # Docker dependencies
+  # ===========================================================================
+
   - 
     package-ecosystem: "docker"
-    directory: "/.devcontainer"
+    directory: "/src/"
     schedule:
-      interval: daily
+      interval: "weekly"
+      day: "monday"
       time: "09:00"
       timezone: "Europe/Amsterdam"
     target-branch: "main"
     commit-message:
       prefix: "dependabot-docker"
-      include: "scope"
     labels:
       - "dependencies"
+      - "docker"
 
-  # Maintain dependencies for NPM
+
+  # devContainer dependencies
+  # ===========================================================================
+
   - 
-    package-ecosystem: "npm"
-    directory: "/"
+    package-ecosystem: "docker"
+    directory: "/.devcontainer"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
       time: "09:00"
       timezone: "Europe/Amsterdam"
     target-branch: "main"
     commit-message:
-      prefix: "dependabot-npm"
-      include: "scope"
+      prefix: "dependabot-devcontainer"
     labels:
       - "dependencies"
+      - "devcontainer"
+
+  - 
+    package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    target-branch: "main"
+    commit-message:
+      prefix: "dependabot-devcontainer"
+    labels:
+      - "dependencies"
+      - "devcontainer"
+
+
+  # PIP dependencies
+  # ===========================================================================
+
+  - 
+    package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Europe/Amsterdam"
+    target-branch: "main"
+    commit-message:
+      prefix: "dependabot-pip"
+    labels:
+      - "dependencies"
+      - "pip"
