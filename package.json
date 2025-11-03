@@ -37,7 +37,7 @@
         "eslint": "^9.8.0",
         "ethereum-waffle": "^4.0.10",
         "ethers": "^6.6.5",
-        "hardhat": "^2.17.0",
+        "hardhat": "^3.0.10",
         "prettier": "^3.0.2",
         "solhint": "^5.0.3",
         "solidity-coverage": "^0.8.4",
