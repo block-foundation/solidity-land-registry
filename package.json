@@ -28,7 +28,7 @@
         "@nomicfoundation/hardhat-chai-matchers": "^2.0.1",
         "@nomicfoundation/hardhat-toolbox": "^3.0.0",
         "@openzeppelin/hardhat-upgrades": "^3.2.1",
-        "@typechain/ethers-v6": "^0.4.3",
+        "@typechain/ethers-v6": "^0.5.1",
         "@types/chai": "^4.3.5",
         "@types/mocha": "^10.0.1",
         "@types/node": "^22.1.0",
